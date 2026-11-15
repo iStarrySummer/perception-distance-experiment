@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; padding: 36px; color: var(--ink); background: var(--paper); font-family: var(--font-sans); font-weight: 700; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.admin-shell { width: min(1080px, 100%); margin: 0 auto; display: grid; gap: 24px; }
+.admin-head { display: flex; align-items: end; justify-content: space-between; }
+.admin-head span { color: var(--primary); letter-spacing: .16em; }
+.admin-head h1 { margin: 4px 0 0; font-size: 38px; }
+.admin-head button, .admin-login button, .admin-toolbar button, .admin-download { min-height: 42px; padding: 0 18px; color: #fff; background: linear-gradient(135deg, #9ab9a5, var(--primary-strong)); border: 0; border-radius: var(--radius-md); font-weight: 700; }
+.admin-login, .admin-dashboard { padding: 28px; background: linear-gradient(135deg, var(--primary-soft), var(--primary-soft-mid), #fff); border: 1px solid var(--primary); border-radius: var(--radius-lg); }
+.admin-login { width: min(560px, 100%); margin: 80px auto 0; }
+.admin-login h2, .admin-login p { margin-top: 0; }
+.admin-login p { color: var(--ink-muted); }
+.admin-login form { display: flex; gap: 10px; }
+.admin-login input { flex: 1; min-height: 44px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: var(--radius-md); }
+.admin-dashboard { display: grid; gap: 22px; }
+.admin-stat { padding: 24px; background: rgba(255, 255, 255, .8); border-radius: var(--radius-md); }
+.admin-stat span { color: var(--ink-muted); }
+.admin-stat strong { margin: 0 8px 0 18px; color: var(--primary-strong); font-size: 48px; }
+.admin-toolbar { display: flex; align-items: center; justify-content: space-between; }
+.admin-toolbar h2 { margin: 0; }
+.admin-table-wrap { overflow: auto; background: rgba(255, 255, 255, .82); border-radius: var(--radius-md); }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; }
+th { color: var(--ink-muted); }
+tr:last-child td { border-bottom: 0; }
+.admin-download { min-height: 34px; padding: 0 12px; }

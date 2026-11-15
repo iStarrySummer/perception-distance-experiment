@@ -378,7 +378,8 @@
         }).join("") + "</div>" +
       "</section>" +
       "<section class=\"app-candidate-zone\" id=\"candidate-zone\">" +
-        "<header class=\"app-section-head app-candidate-head\"><div><span class=\"app-kicker t-meta\">请选择 <small class=\"app-kicker-note\">（候选视频均观看完毕才能进行切换至下一题）</small></span><h2 class=\"t-heading\">只比较表情和头部运动，哪一个候选项更接近上方参考 <small class=\"app-heading-note\">（可以针对性地寻找相同头部朝向的视频作为参考）</small></h2></div></header>" +
+        "<header class=\"app-section-head app-candidate-head\"><div><span class=\"app-kicker t-meta\">候选视频</span><h2 class=\"t-heading\">只比较表情和头部运动，哪一个候选项更接近上方参考</h2>" +
+        "<p class=\"app-heading-notes\"><small>（可以针对性地寻找相同头部朝向的视频作为参考）</small><small>（候选视频均观看完毕才能切换至下一题）</small></p></div></header>" +
         "<div class=\"app-candidate-grid\">" + candidateCard("A", candidateA) + candidateCard("B", candidateB) + "</div>" +
         "<div class=\"app-question-actions\"><button class=\"app-btn app-btn--primary\" id=\"next-question\" disabled>" + nextLabel() + "</button></div>" +
       "</section>" +
@@ -493,16 +494,92 @@
   }
 
   function renderComplete() {
+    var submission = state.cloudSubmission || { status: "idle" }
     app.innerHTML = "<section class=\"app-complete app-enter\">" +
       "<canvas class=\"app-fireworks\" id=\"fireworks\" aria-hidden=\"true\"></canvas>" +
       "<span class=\"app-complete__icon\">✓</span>" +
       "<h1 class=\"t-display\">" + data.totals.questions + " 道题已全部完成</h1>" +
-      "<p>点击下方按钮导出本次作答记录</p>" +
-      "<div class=\"app-actions\"><button class=\"app-btn app-btn--primary\" id=\"export-button\">导出 CSV</button></div>" +
+      "<p>系统会自动保存本次作答数据</p>" +
+      "<div class=\"app-cloud-status" + cloudStatusClass(submission.status) + "\" id=\"cloud-status\" aria-live=\"polite\">" + cloudStatusText(submission.status) + "</div>" +
+      "<div class=\"app-actions\"><button class=\"app-btn app-btn--primary\" id=\"retry-upload\"" + (submission.status === "failed" ? "" : " hidden") + ">重新保存</button>" +
+      "<button class=\"app-btn app-btn--secondary\" id=\"export-button\">下载 CSV 备份</button></div>" +
       "<small class=\"t-meta\" id=\"export-status\" aria-live=\"polite\"></small>" +
     "</section>"
     document.getElementById("export-button").addEventListener("click", exportCsv)
+    document.getElementById("retry-upload").addEventListener("click", submitCompletedExperiment)
     startFireworks()
+    if (submission.status !== "success" && submission.status !== "uploading") submitCompletedExperiment()
+  }
+
+  function cloudStatusClass(status) {
+    if (status === "success") return " is-success"
+    if (status === "failed" || status === "not_configured") return " is-error"
+    return ""
+  }
+
+  function cloudStatusText(status) {
+    if (status === "uploading") return "正在保存实验数据…"
+    if (status === "success") return "实验数据已成功保存"
+    if (status === "failed") return "自动保存失败，请点击重新保存"
+    if (status === "not_configured") return "云端保存尚未启用，请先下载 CSV 备份"
+    return "正在准备保存实验数据…"
+  }
+
+  function updateCloudStatus() {
+    var element = document.getElementById("cloud-status")
+    var retry = document.getElementById("retry-upload")
+    if (!element || !retry) return
+    var status = state.cloudSubmission.status
+    element.className = "app-cloud-status" + cloudStatusClass(status)
+    element.textContent = cloudStatusText(status)
+    retry.hidden = status !== "failed"
+  }
+
+  function submitCompletedExperiment() {
+    if (!window.PerceptionCloud || !window.PerceptionCloud.isConfigured()) {
+      state.cloudSubmission.status = "not_configured"
+      state.cloudSubmission.lastError = "cloud_not_configured"
+      window.PerceptionStore.write(state)
+      updateCloudStatus()
+      return
+    }
+    if (state.answers.length !== data.totals.questions) {
+      state.cloudSubmission.status = "failed"
+      state.cloudSubmission.lastError = "answer_count_mismatch"
+      window.PerceptionStore.write(state)
+      updateCloudStatus()
+      return
+    }
+
+    state.cloudSubmission.status = "uploading"
+    state.cloudSubmission.attemptCount = Number(state.cloudSubmission.attemptCount || 0) + 1
+    state.cloudSubmission.lastError = null
+    window.PerceptionStore.write(state)
+    updateCloudStatus()
+
+    window.PerceptionCloud.submit({
+      participantId: state.participantId,
+      submissionId: state.participantId + "-" + data.fingerprint,
+      fingerprint: data.fingerprint,
+      seed: data.seed,
+      startedAt: state.startedAt,
+      completedAt: state.completedAt,
+      groupCount: data.totals.groups,
+      questionCount: data.totals.questions,
+      answers: state.answers
+    }).then(function (result) {
+      state.cloudSubmission.status = "success"
+      state.cloudSubmission.receiptId = result.receiptId || null
+      state.cloudSubmission.submittedAt = new Date().toISOString()
+      state.cloudSubmission.lastError = null
+      window.PerceptionStore.write(state)
+      updateCloudStatus()
+    }).catch(function (error) {
+      state.cloudSubmission.status = "failed"
+      state.cloudSubmission.lastError = error && error.message ? error.message : "upload_failed"
+      window.PerceptionStore.write(state)
+      updateCloudStatus()
+    })
   }
 
   function startFireworks() {

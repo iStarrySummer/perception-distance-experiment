@@ -30,7 +30,14 @@
       playbackRateCustomized: false,
       questionStartedAt: null,
       startedAt: null,
-      completedAt: null
+      completedAt: null,
+      cloudSubmission: {
+        status: "idle",
+        attemptCount: 0,
+        receiptId: null,
+        submittedAt: null,
+        lastError: null
+      }
     }
   }
 
@@ -39,6 +46,9 @@
       var parsed = JSON.parse(localStorage.getItem(storageKey) || "null")
       if (!parsed || parsed.version !== 1 || parsed.fingerprint !== fingerprint) return fresh(fingerprint)
       if (!Array.isArray(parsed.answers)) parsed.answers = []
+      if (!parsed.cloudSubmission || typeof parsed.cloudSubmission !== "object") {
+        parsed.cloudSubmission = fresh(fingerprint).cloudSubmission
+      }
       if ([0.75, 1, 1.5, 2].indexOf(Number(parsed.playbackRate)) === -1) parsed.playbackRate = 2
       if (parsed.playbackRateCustomized !== true) {
         parsed.playbackRate = 2

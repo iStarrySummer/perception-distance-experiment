@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>实验数据后台</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/admin.css?v=1">
+  <script defer src="data/cloud-config.js?v=1"></script>
+  <script defer src="scripts/admin.js?v=1"></script>
+</head>
+<body>
+  <main class="admin-shell">
+    <header class="admin-head">
+      <div><span>ADMIN</span><h1>实验数据后台</h1></div>
+      <button id="logout-button" type="button" hidden>退出后台</button>
+    </header>
+    <section class="admin-login" id="login-panel">
+      <h2>管理员验证</h2>
+      <p>输入管理员密钥后查看实验数据</p>
+      <form id="login-form">
+        <input id="admin-key" type="password" autocomplete="current-password" placeholder="管理员密钥" required>
+        <button type="submit">进入后台</button>
+      </form>
+      <small id="login-status" aria-live="polite"></small>
+    </section>
+    <section class="admin-dashboard" id="dashboard" hidden>
+      <article class="admin-stat"><span>已收到完整数据</span><strong id="submission-count">0</strong><small>份</small></article>
+      <div class="admin-toolbar"><h2>实验记录</h2><button id="refresh-button" type="button">刷新</button></div>
+      <div class="admin-table-wrap">
+        <table>
+          <thead><tr><th>匿名编号</th><th>完成时间</th><th>文件大小</th><th>操作</th></tr></thead>
+          <tbody id="submission-list"></tbody>
+        </table>
+      </div>
+      <small id="dashboard-status" aria-live="polite"></small>
+    </section>
+  </main>
+</body>
+</html>
