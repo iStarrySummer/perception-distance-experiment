@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>人物动作感知实验一</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/app.css?v=9">
+  <script defer src="data/video-paths.js?v=4"></script>
+  <script defer src="data/experiment-spec.js?v=9"></script>
+  <script defer src="scripts/store.js?v=3"></script>
+  <script defer src="scripts/app.js?v=11"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <a class="app-brand" href="#" aria-label="返回当前实验页面">
+        <span class="app-brand__mark">E1</span>
+        <span>
+          <strong class="t-heading">人物动作感知实验一</strong>
+          <small class="t-meta">表情与头部运动</small>
+        </span>
+      </a>
+      <div class="app-session t-meta" id="session-label" aria-live="polite"></div>
+    </header>
+
+    <main class="app-main" id="app" tabindex="-1"></main>
+
+  </div>
+
+  <noscript>
+    <p class="app-noscript">请启用浏览器中的 JavaScript 后使用</p>
+  </noscript>
+</body>
+</html>
