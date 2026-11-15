@@ -61,7 +61,8 @@
   }
 
   function makePresentation() {
-    var random = randomGenerator(hashSeed(String(data.seed) + ":" + state.participantId))
+    var participantSeed = String(data.seed) + ":" + state.participantId + ":" + state.attemptId
+    var random = randomGenerator(hashSeed(participantSeed))
     var groupOrder = shuffle(data.groups.map(function (group) { return group.id }), random)
     var questionOrder = {}
     var positions = {}
@@ -90,7 +91,7 @@
 
     return {
       seed: data.seed,
-      participant_seed: hashSeed(String(data.seed) + ":" + state.participantId),
+      participant_seed: hashSeed(participantSeed),
       group_order: groupOrder,
       question_order: questionOrder,
       positions: positions
@@ -125,7 +126,7 @@
   }
 
   function renderShell() {
-    sessionLabel.innerHTML = "匿名编号 <strong>" + escapeHtml(state.participantId) + "</strong>"
+    sessionLabel.innerHTML = "匿名编号 <strong>" + escapeHtml(state.participantId) + "</strong> · 第 " + state.attemptNumber + " 次"
   }
 
   function render() {
@@ -502,11 +503,13 @@
       "<p>系统会自动保存本次作答数据</p>" +
       "<div class=\"app-cloud-status" + cloudStatusClass(submission.status) + "\" id=\"cloud-status\" aria-live=\"polite\">" + cloudStatusText(submission.status) + "</div>" +
       "<div class=\"app-actions\"><button class=\"app-btn app-btn--primary\" id=\"retry-upload\"" + (submission.status === "failed" ? "" : " hidden") + ">重新保存</button>" +
-      "<button class=\"app-btn app-btn--secondary\" id=\"export-button\">下载 CSV 备份</button></div>" +
+      "<button class=\"app-btn app-btn--secondary\" id=\"export-button\">下载 CSV 备份</button>" +
+      "<button class=\"app-btn app-btn--secondary\" id=\"repeat-button\"" + (submission.status === "success" ? "" : " disabled") + ">再做一次</button></div>" +
       "<small class=\"t-meta\" id=\"export-status\" aria-live=\"polite\"></small>" +
     "</section>"
     document.getElementById("export-button").addEventListener("click", exportCsv)
     document.getElementById("retry-upload").addEventListener("click", submitCompletedExperiment)
+    document.getElementById("repeat-button").addEventListener("click", repeatExperiment)
     startFireworks()
     if (submission.status !== "success" && submission.status !== "uploading") submitCompletedExperiment()
   }
@@ -528,11 +531,23 @@
   function updateCloudStatus() {
     var element = document.getElementById("cloud-status")
     var retry = document.getElementById("retry-upload")
-    if (!element || !retry) return
+    var repeat = document.getElementById("repeat-button")
+    if (!element || !retry || !repeat) return
     var status = state.cloudSubmission.status
     element.className = "app-cloud-status" + cloudStatusClass(status)
     element.textContent = cloudStatusText(status)
     retry.hidden = status !== "failed"
+    repeat.disabled = status !== "success"
+  }
+
+  function repeatExperiment() {
+    if (state.cloudSubmission.status !== "success") return
+    clearVideoPreloads()
+    state = window.PerceptionStore.repeat(data.fingerprint || "", state)
+    state.presentation = makePresentation()
+    window.PerceptionStore.write(state)
+    window.scrollTo({ top: 0, behavior: "smooth" })
+    render()
   }
 
   function submitCompletedExperiment() {
@@ -559,7 +574,7 @@
 
     window.PerceptionCloud.submit({
       participantId: state.participantId,
-      submissionId: state.participantId + "-" + data.fingerprint,
+      submissionId: state.participantId + "-" + data.fingerprint + "-" + state.attemptId,
       fingerprint: data.fingerprint,
       seed: data.seed,
       startedAt: state.startedAt,
@@ -672,7 +687,7 @@
     var blob = new Blob(["\ufeff" + rows.join("\r\n")], { type: "text/csv;charset=utf-8" })
     var link = document.createElement("a")
     link.href = URL.createObjectURL(blob)
-    link.download = "perception_distance_experiment_" + state.participantId + ".csv"
+    link.download = "perception_distance_experiment_" + state.participantId + "_" + state.attemptId + ".csv"
     document.body.appendChild(link)
     link.click()
     link.remove()
