@@ -738,16 +738,28 @@
     return /[",\r\n]/.test(text) ? "\"" + text.replace(/"/g, "\"\"") + "\"" : text
   }
 
+  function totalDurationSeconds(answers) {
+    var totalMilliseconds = answers.reduce(function (total, answer) {
+      var duration = Number(answer.response_time_ms)
+      return total + (Number.isFinite(duration) && duration > 0 ? duration : 0)
+    }, 0)
+    return Math.round(totalMilliseconds / 1000)
+  }
+
   function exportCsv() {
     var columns = [
       "anonymous_participant_id", "answer_order", "presented_group_order", "group_id", "condition", "condition_label",
       "pair_member_1", "pair_member_2", "question_id", "base_question_order", "target_member",
       "reference_slot_1", "reference_path_1", "reference_slot_2", "reference_path_2", "reference_slot_3", "reference_path_3",
       "a_member", "a_slot", "a_path", "b_member", "b_slot", "b_path", "correct_answer_position",
-      "participant_choice", "is_correct", "response_time_ms", "answered_at"
+      "participant_choice", "is_correct", "response_time_ms", "answered_at", "experiment_total_duration_seconds"
     ]
+    var experimentTotalDurationSeconds = totalDurationSeconds(state.answers)
     var rows = [columns.join(",")].concat(state.answers.map(function (answer) {
-      return columns.map(function (column) { return csvCell(answer[column]) }).join(",")
+      return columns.map(function (column) {
+        if (column === "experiment_total_duration_seconds") return csvCell(experimentTotalDurationSeconds)
+        return csvCell(answer[column])
+      }).join(",")
     }))
     var blob = new Blob(["\ufeff" + rows.join("\r\n")], { type: "text/csv;charset=utf-8" })
     var link = document.createElement("a")
