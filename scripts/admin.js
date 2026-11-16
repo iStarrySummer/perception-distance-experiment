@@ -42,7 +42,7 @@
   }
 
   function versionFromKey(key) {
-    var match = String(key).match(/perception-distance-e1-v\d+(?:-[a-z]+(?:-[a-z]+)*)?/i)
+    var match = String(key).match(/perception-distance-e1-v\d+(?:-[a-z0-9]+)*/i)
     return match ? match[0] : "旧版本"
   }
 

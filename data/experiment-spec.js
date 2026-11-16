@@ -46,10 +46,20 @@
     {
       id: "G5",
       participant_label: "第 5 组",
-      condition: "ai_pair_4_7",
+      condition: "ai_pair_4_6",
       condition_label: "AI 剧",
       members: [
         { id: "ai4", admin_label: "AI-4" },
+        { id: "ai6", admin_label: "AI-6" }
+      ]
+    },
+    {
+      id: "G6",
+      participant_label: "第 6 组",
+      condition: "ai_pair_5_7",
+      condition_label: "AI 剧",
+      members: [
+        { id: "ai5", admin_label: "AI-5" },
         { id: "ai7", admin_label: "AI-7" }
       ]
     }
@@ -124,7 +134,7 @@
   window.PERCEPTION_EXPERIMENT = {
     schema_version: 1,
     seed: 20261116,
-    fingerprint: "perception-distance-e1-v11-left-center-right",
+    fingerprint: "perception-distance-e1-v12-ai-pairs-46-57",
     preview_mode: false,
     ready: allSlots.every(function (item) { return Boolean(item.path) }),
     groups: groups,

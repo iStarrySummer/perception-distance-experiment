@@ -21,6 +21,7 @@ vm.runInNewContext(
 
 const data = context.window.PERCEPTION_EXPERIMENT
 const sourcePaths = context.window.PERCEPTION_SOURCE_VIDEO_PATHS || {}
+const sourceDirections = context.window.PERCEPTION_SOURCE_VIDEO_DIRECTIONS || {}
 const errors = []
 const ids = data.slots.map((slot) => slot.slot_id)
 const duplicateIds = ids.filter((id, index) => ids.indexOf(id) !== index)
@@ -29,18 +30,19 @@ const expectedPairs = [
   ["Leonard", "Howard"],
   ["Howard", "Sheldon"],
   ["AI-1", "AI-3"],
-  ["AI-4", "AI-7"]
+  ["AI-4", "AI-6"],
+  ["AI-5", "AI-7"]
 ]
 
 function orientation(slot) {
-  return path.basename(sourcePaths[slot.slot_id] || "").split("_")[0]
+  return sourceDirections[slot.slot_id] || path.basename(sourcePaths[slot.slot_id] || "").split("_")[0]
 }
 
-if (data.groups.length !== 5) errors.push(`实验组数量应为 5，当前为 ${data.groups.length}`)
-if (data.totals.questions !== 50) errors.push(`题目数量应为 50，当前为 ${data.totals.questions}`)
-if (data.slots.length !== 130) errors.push(`视频站位应为 130，当前为 ${data.slots.length}`)
-if (Object.keys(sourcePaths).length !== 130) errors.push(`原始视频路径应为 130 个站位，当前为 ${Object.keys(sourcePaths).length}`)
-if (new Set(Object.values(sourcePaths)).size !== 91) errors.push(`不同原始视频应为 91 个，当前为 ${new Set(Object.values(sourcePaths)).size}`)
+if (data.groups.length !== 6) errors.push(`实验组数量应为 6，当前为 ${data.groups.length}`)
+if (data.totals.questions !== 60) errors.push(`题目数量应为 60，当前为 ${data.totals.questions}`)
+if (data.slots.length !== 156) errors.push(`视频站位应为 156，当前为 ${data.slots.length}`)
+if (Object.keys(sourcePaths).length !== 156) errors.push(`原始视频路径应为 156 个站位，当前为 ${Object.keys(sourcePaths).length}`)
+if (new Set(Object.values(sourcePaths)).size !== 117) errors.push(`不同原始视频应为 117 个，当前为 ${new Set(Object.values(sourcePaths)).size}`)
 if (duplicateIds.length) errors.push(`存在重复站位 ${Array.from(new Set(duplicateIds)).join(", ")}`)
 
 data.groups.forEach((group, groupIndex) => {
@@ -68,7 +70,7 @@ data.groups.forEach((group, groupIndex) => {
   group.members.forEach((member) => {
     if (group.references[member.id].length !== 3) errors.push(`${group.id} 的 ${member.id} 参考站位不是 3 个`)
     if (group.candidates[member.id].length !== 10) errors.push(`${group.id} 的 ${member.id} 候选站位不是 10 个`)
-    const referenceDirections = group.references[member.id].map((slot) => path.basename(sourcePaths[slot.slot_id]).split("__")[0])
+    const referenceDirections = group.references[member.id].map(orientation)
     if (referenceDirections.join(",") !== "left,front,right") {
       errors.push(`${group.id} 的 ${member.id} 参考视频不是左、正中、右顺序`)
     }

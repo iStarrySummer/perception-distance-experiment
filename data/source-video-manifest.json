@@ -1,7 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-16T03:12:03.880Z",
-  "source_root": "/Users/a1/Desktop/projects/个性化/七人物_视频页面素材包/videos",
+  "generated_at": "2026-11-16T07:07:37.761Z",
+  "source_roots": [
+    "/Users/a1/Desktop/projects/个性化/七人物_视频页面素材包/videos",
+    "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos"
+  ],
   "people": [
     "Sheldon",
     "Leonard",
@@ -9,13 +12,15 @@
     "AI-1",
     "AI-3",
     "AI-4",
+    "AI-5",
+    "AI-6",
     "AI-7"
   ],
   "totals": {
-    "people": 7,
-    "reference_videos": 21,
-    "candidate_videos": 70,
-    "videos": 91
+    "people": 9,
+    "reference_videos": 27,
+    "candidate_videos": 90,
+    "videos": 117
   },
   "records": [
     {
@@ -719,6 +724,240 @@
       "source_absolute_path": "/Users/a1/Desktop/projects/个性化/七人物_视频页面素材包/videos/AI-4/candidate_faceswap/right_03__c10_ref01_s00042825_e00042872.mp4",
       "local_relative_path": "videos/source/AI-4/candidate_faceswap/right_03__c10_ref01_s00042825_e00042872.mp4",
       "size_bytes": 130224
+    },
+    {
+      "person": "AI-5",
+      "role": "reference",
+      "index": 1,
+      "filename": "c10_ref02_s00013672_e00013797.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/reference_gt/c10_ref02_s00013672_e00013797.mp4",
+      "local_relative_path": "videos/source/AI-5/reference_gt/c10_ref02_s00013672_e00013797.mp4",
+      "size_bytes": 319486
+    },
+    {
+      "person": "AI-5",
+      "role": "reference",
+      "index": 2,
+      "filename": "c10_ref02_s00034532_e00034676.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/reference_gt/c10_ref02_s00034532_e00034676.mp4",
+      "local_relative_path": "videos/source/AI-5/reference_gt/c10_ref02_s00034532_e00034676.mp4",
+      "size_bytes": 386371
+    },
+    {
+      "person": "AI-5",
+      "role": "reference",
+      "index": 3,
+      "filename": "c10_ref02_s00056417_e00056537.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/reference_gt/c10_ref02_s00056417_e00056537.mp4",
+      "local_relative_path": "videos/source/AI-5/reference_gt/c10_ref02_s00056417_e00056537.mp4",
+      "size_bytes": 332999
+    },
+    {
+      "person": "AI-5",
+      "role": "candidate",
+      "index": 1,
+      "filename": "c10_ref02_s00018260_e00018349.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/candidate_faceswap/c10_ref02_s00018260_e00018349.mp4",
+      "local_relative_path": "videos/source/AI-5/candidate_faceswap/c10_ref02_s00018260_e00018349.mp4",
+      "size_bytes": 257576
+    },
+    {
+      "person": "AI-5",
+      "role": "candidate",
+      "index": 2,
+      "filename": "c10_ref02_s00018627_e00018730.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/candidate_faceswap/c10_ref02_s00018627_e00018730.mp4",
+      "local_relative_path": "videos/source/AI-5/candidate_faceswap/c10_ref02_s00018627_e00018730.mp4",
+      "size_bytes": 280532
+    },
+    {
+      "person": "AI-5",
+      "role": "candidate",
+      "index": 3,
+      "filename": "c10_ref02_s00027685_e00027768.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/candidate_faceswap/c10_ref02_s00027685_e00027768.mp4",
+      "local_relative_path": "videos/source/AI-5/candidate_faceswap/c10_ref02_s00027685_e00027768.mp4",
+      "size_bytes": 275252
+    },
+    {
+      "person": "AI-5",
+      "role": "candidate",
+      "index": 4,
+      "filename": "c10_ref02_s00041548_e00041582.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/candidate_faceswap/c10_ref02_s00041548_e00041582.mp4",
+      "local_relative_path": "videos/source/AI-5/candidate_faceswap/c10_ref02_s00041548_e00041582.mp4",
+      "size_bytes": 114195
+    },
+    {
+      "person": "AI-5",
+      "role": "candidate",
+      "index": 5,
+      "filename": "c10_ref02_s00045469_e00045545.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/candidate_faceswap/c10_ref02_s00045469_e00045545.mp4",
+      "local_relative_path": "videos/source/AI-5/candidate_faceswap/c10_ref02_s00045469_e00045545.mp4",
+      "size_bytes": 225770
+    },
+    {
+      "person": "AI-5",
+      "role": "candidate",
+      "index": 6,
+      "filename": "c10_ref02_s00057161_e00057215.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/candidate_faceswap/c10_ref02_s00057161_e00057215.mp4",
+      "local_relative_path": "videos/source/AI-5/candidate_faceswap/c10_ref02_s00057161_e00057215.mp4",
+      "size_bytes": 151672
+    },
+    {
+      "person": "AI-5",
+      "role": "candidate",
+      "index": 7,
+      "filename": "c10_ref02_s00068349_e00068398.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/candidate_faceswap/c10_ref02_s00068349_e00068398.mp4",
+      "local_relative_path": "videos/source/AI-5/candidate_faceswap/c10_ref02_s00068349_e00068398.mp4",
+      "size_bytes": 142558
+    },
+    {
+      "person": "AI-5",
+      "role": "candidate",
+      "index": 8,
+      "filename": "c10_ref02_s00069816_e00069848.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/candidate_faceswap/c10_ref02_s00069816_e00069848.mp4",
+      "local_relative_path": "videos/source/AI-5/candidate_faceswap/c10_ref02_s00069816_e00069848.mp4",
+      "size_bytes": 94286
+    },
+    {
+      "person": "AI-5",
+      "role": "candidate",
+      "index": 9,
+      "filename": "c10_ref02_s00083918_e00084005.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/candidate_faceswap/c10_ref02_s00083918_e00084005.mp4",
+      "local_relative_path": "videos/source/AI-5/candidate_faceswap/c10_ref02_s00083918_e00084005.mp4",
+      "size_bytes": 250189
+    },
+    {
+      "person": "AI-5",
+      "role": "candidate",
+      "index": 10,
+      "filename": "c10_ref02_s00086291_e00086329.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-5/candidate_faceswap/c10_ref02_s00086291_e00086329.mp4",
+      "local_relative_path": "videos/source/AI-5/candidate_faceswap/c10_ref02_s00086291_e00086329.mp4",
+      "size_bytes": 118375
+    },
+    {
+      "person": "AI-6",
+      "role": "reference",
+      "index": 1,
+      "filename": "c10_jFdt_ref01_s00032017_e00032127.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/reference_gt/c10_jFdt_ref01_s00032017_e00032127.mp4",
+      "local_relative_path": "videos/source/AI-6/reference_gt/c10_jFdt_ref01_s00032017_e00032127.mp4",
+      "size_bytes": 254315
+    },
+    {
+      "person": "AI-6",
+      "role": "reference",
+      "index": 2,
+      "filename": "c10_jFdt_ref01_s00064016_e00064103.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/reference_gt/c10_jFdt_ref01_s00064016_e00064103.mp4",
+      "local_relative_path": "videos/source/AI-6/reference_gt/c10_jFdt_ref01_s00064016_e00064103.mp4",
+      "size_bytes": 242553
+    },
+    {
+      "person": "AI-6",
+      "role": "reference",
+      "index": 3,
+      "filename": "c10_jFdt_ref01_s00198870_e00199015.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/reference_gt/c10_jFdt_ref01_s00198870_e00199015.mp4",
+      "local_relative_path": "videos/source/AI-6/reference_gt/c10_jFdt_ref01_s00198870_e00199015.mp4",
+      "size_bytes": 544875
+    },
+    {
+      "person": "AI-6",
+      "role": "candidate",
+      "index": 1,
+      "filename": "c10_jFdt_ref01_s00015404_e00015451.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/candidate_faceswap/c10_jFdt_ref01_s00015404_e00015451.mp4",
+      "local_relative_path": "videos/source/AI-6/candidate_faceswap/c10_jFdt_ref01_s00015404_e00015451.mp4",
+      "size_bytes": 128198
+    },
+    {
+      "person": "AI-6",
+      "role": "candidate",
+      "index": 2,
+      "filename": "c10_jFdt_ref01_s00017560_e00017644.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/candidate_faceswap/c10_jFdt_ref01_s00017560_e00017644.mp4",
+      "local_relative_path": "videos/source/AI-6/candidate_faceswap/c10_jFdt_ref01_s00017560_e00017644.mp4",
+      "size_bytes": 272314
+    },
+    {
+      "person": "AI-6",
+      "role": "candidate",
+      "index": 3,
+      "filename": "c10_jFdt_ref01_s00031952_e00031987.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/candidate_faceswap/c10_jFdt_ref01_s00031952_e00031987.mp4",
+      "local_relative_path": "videos/source/AI-6/candidate_faceswap/c10_jFdt_ref01_s00031952_e00031987.mp4",
+      "size_bytes": 95907
+    },
+    {
+      "person": "AI-6",
+      "role": "candidate",
+      "index": 4,
+      "filename": "c10_jFdt_ref01_s00058149_e00058222.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/candidate_faceswap/c10_jFdt_ref01_s00058149_e00058222.mp4",
+      "local_relative_path": "videos/source/AI-6/candidate_faceswap/c10_jFdt_ref01_s00058149_e00058222.mp4",
+      "size_bytes": 219463
+    },
+    {
+      "person": "AI-6",
+      "role": "candidate",
+      "index": 5,
+      "filename": "c10_jFdt_ref01_s00062449_e00062482.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/candidate_faceswap/c10_jFdt_ref01_s00062449_e00062482.mp4",
+      "local_relative_path": "videos/source/AI-6/candidate_faceswap/c10_jFdt_ref01_s00062449_e00062482.mp4",
+      "size_bytes": 100208
+    },
+    {
+      "person": "AI-6",
+      "role": "candidate",
+      "index": 6,
+      "filename": "c10_jFdt_ref01_s00063139_e00063189.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/candidate_faceswap/c10_jFdt_ref01_s00063139_e00063189.mp4",
+      "local_relative_path": "videos/source/AI-6/candidate_faceswap/c10_jFdt_ref01_s00063139_e00063189.mp4",
+      "size_bytes": 142924
+    },
+    {
+      "person": "AI-6",
+      "role": "candidate",
+      "index": 7,
+      "filename": "c10_jFdt_ref01_s00064375_e00064430.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/candidate_faceswap/c10_jFdt_ref01_s00064375_e00064430.mp4",
+      "local_relative_path": "videos/source/AI-6/candidate_faceswap/c10_jFdt_ref01_s00064375_e00064430.mp4",
+      "size_bytes": 181180
+    },
+    {
+      "person": "AI-6",
+      "role": "candidate",
+      "index": 8,
+      "filename": "c10_jFdt_ref01_s00067952_e00067997.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/candidate_faceswap/c10_jFdt_ref01_s00067952_e00067997.mp4",
+      "local_relative_path": "videos/source/AI-6/candidate_faceswap/c10_jFdt_ref01_s00067952_e00067997.mp4",
+      "size_bytes": 129041
+    },
+    {
+      "person": "AI-6",
+      "role": "candidate",
+      "index": 9,
+      "filename": "c10_jFdt_ref01_s00070049_e00070088.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/candidate_faceswap/c10_jFdt_ref01_s00070049_e00070088.mp4",
+      "local_relative_path": "videos/source/AI-6/candidate_faceswap/c10_jFdt_ref01_s00070049_e00070088.mp4",
+      "size_bytes": 107831
+    },
+    {
+      "person": "AI-6",
+      "role": "candidate",
+      "index": 10,
+      "filename": "c10_jFdt_ref01_s00107531_e00107564.mp4",
+      "source_absolute_path": "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos/AI-6/candidate_faceswap/c10_jFdt_ref01_s00107531_e00107564.mp4",
+      "local_relative_path": "videos/source/AI-6/candidate_faceswap/c10_jFdt_ref01_s00107531_e00107564.mp4",
+      "size_bytes": 106867
     },
     {
       "person": "AI-7",

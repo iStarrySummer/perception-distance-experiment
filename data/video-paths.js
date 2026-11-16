@@ -1,13 +1,23 @@
 window.PERCEPTION_SOURCE_VIDEO_PATHS = {}
+window.PERCEPTION_SOURCE_VIDEO_DIRECTIONS = {}
 
-function registerMemberVideos(groupId, memberCode, personDirectory, referenceFiles, candidateFiles) {
+function inferredDirection(filename) {
+  var direction = String(filename).split("_")[0]
+  return ["left", "front", "right"].indexOf(direction) >= 0 ? direction : ""
+}
+
+function registerMemberVideos(groupId, memberCode, personDirectory, referenceFiles, candidateFiles, directions) {
+  var referenceDirections = directions && directions.reference || []
+  var candidateDirections = directions && directions.candidate || []
   referenceFiles.forEach(function (filename, index) {
     var slotId = groupId + "-" + memberCode + "-REF-" + String(index + 1).padStart(2, "0")
     window.PERCEPTION_SOURCE_VIDEO_PATHS[slotId] = "videos/source/" + personDirectory + "/reference_gt/" + filename
+    window.PERCEPTION_SOURCE_VIDEO_DIRECTIONS[slotId] = referenceDirections[index] || inferredDirection(filename)
   })
   candidateFiles.forEach(function (filename, index) {
     var slotId = groupId + "-" + memberCode + "-CAND-" + String(index + 1).padStart(2, "0")
     window.PERCEPTION_SOURCE_VIDEO_PATHS[slotId] = "videos/source/" + personDirectory + "/candidate_faceswap/" + filename
+    window.PERCEPTION_SOURCE_VIDEO_DIRECTIONS[slotId] = candidateDirections[index] || inferredDirection(filename)
   })
 }
 
@@ -16,7 +26,9 @@ function reuseMemberVideos(targetGroup, targetMember, sourceGroup, sourceMember)
   var targetPrefix = targetGroup + "-" + targetMember + "-"
   Object.keys(window.PERCEPTION_SOURCE_VIDEO_PATHS).forEach(function (slotId) {
     if (slotId.indexOf(sourcePrefix) !== 0) return
-    window.PERCEPTION_SOURCE_VIDEO_PATHS[targetPrefix + slotId.slice(sourcePrefix.length)] = window.PERCEPTION_SOURCE_VIDEO_PATHS[slotId]
+    var targetId = targetPrefix + slotId.slice(sourcePrefix.length)
+    window.PERCEPTION_SOURCE_VIDEO_PATHS[targetId] = window.PERCEPTION_SOURCE_VIDEO_PATHS[slotId]
+    window.PERCEPTION_SOURCE_VIDEO_DIRECTIONS[targetId] = window.PERCEPTION_SOURCE_VIDEO_DIRECTIONS[slotId]
   })
 }
 
@@ -122,7 +134,47 @@ registerMemberVideos("G5", "AI4", "AI-4", [
   "right_03__c10_ref01_s00042825_e00042872.mp4"
 ])
 
-registerMemberVideos("G5", "AI7", "AI-7", [
+registerMemberVideos("G5", "AI6", "AI-6", [
+  "c10_jFdt_ref01_s00032017_e00032127.mp4",
+  "c10_jFdt_ref01_s00064016_e00064103.mp4",
+  "c10_jFdt_ref01_s00198870_e00199015.mp4"
+], [
+  "c10_jFdt_ref01_s00058149_e00058222.mp4",
+  "c10_jFdt_ref01_s00015404_e00015451.mp4",
+  "c10_jFdt_ref01_s00070049_e00070088.mp4",
+  "c10_jFdt_ref01_s00031952_e00031987.mp4",
+  "c10_jFdt_ref01_s00017560_e00017644.mp4",
+  "c10_jFdt_ref01_s00064375_e00064430.mp4",
+  "c10_jFdt_ref01_s00062449_e00062482.mp4",
+  "c10_jFdt_ref01_s00063139_e00063189.mp4",
+  "c10_jFdt_ref01_s00067952_e00067997.mp4",
+  "c10_jFdt_ref01_s00107531_e00107564.mp4"
+], {
+  reference: ["left", "front", "right"],
+  candidate: ["front", "front", "front", "front", "left", "left", "left", "right", "right", "right"]
+})
+
+registerMemberVideos("G6", "AI5", "AI-5", [
+  "c10_ref02_s00056417_e00056537.mp4",
+  "c10_ref02_s00013672_e00013797.mp4",
+  "c10_ref02_s00034532_e00034676.mp4"
+], [
+  "c10_ref02_s00018627_e00018730.mp4",
+  "c10_ref02_s00018260_e00018349.mp4",
+  "c10_ref02_s00083918_e00084005.mp4",
+  "c10_ref02_s00045469_e00045545.mp4",
+  "c10_ref02_s00057161_e00057215.mp4",
+  "c10_ref02_s00086291_e00086329.mp4",
+  "c10_ref02_s00041548_e00041582.mp4",
+  "c10_ref02_s00027685_e00027768.mp4",
+  "c10_ref02_s00068349_e00068398.mp4",
+  "c10_ref02_s00069816_e00069848.mp4"
+], {
+  reference: ["left", "front", "right"],
+  candidate: ["front", "front", "front", "front", "left", "left", "left", "right", "right", "right"]
+})
+
+registerMemberVideos("G6", "AI7", "AI-7", [
   "left__c10_jFdt_ref02_s00074496_e00074568.mp4",
   "front__c10_jFdt_ref02_s00186188_e00186318.mp4",
   "right__c10_jFdt_ref02_s00021640_e00021763.mp4"

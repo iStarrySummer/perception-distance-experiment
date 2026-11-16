@@ -8,7 +8,9 @@
     { id: "ai-1", label: "AI-1", prefix: "G4-AI1" },
     { id: "ai-3", label: "AI-3", prefix: "G4-AI3" },
     { id: "ai-4", label: "AI-4", prefix: "G5-AI4" },
-    { id: "ai-7", label: "AI-7", prefix: "G5-AI7" }
+    { id: "ai-6", label: "AI-6", prefix: "G5-AI6" },
+    { id: "ai-5", label: "AI-5", prefix: "G6-AI5" },
+    { id: "ai-7", label: "AI-7", prefix: "G6-AI7" }
   ]
   var paths = window.PERCEPTION_SOURCE_VIDEO_PATHS || {}
   var main = document.getElementById("review-main")

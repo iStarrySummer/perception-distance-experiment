@@ -66,36 +66,57 @@
     var groupOrder = shuffle(data.groups.map(function (group) { return group.id }), random)
     var questionOrder = {}
     var positions = {}
-    var allQuestions = []
 
     data.groups.forEach(function (group) {
       questionOrder[group.id] = shuffle(group.questions.map(function (question) { return question.id }), random)
-      allQuestions = allQuestions.concat(group.questions)
+      var targetOnLeftPlan = shuffle(group.questions.map(function (_, index) {
+        return index < Math.floor(group.questions.length / 2)
+      }), random)
+      group.questions.forEach(function (question, index) {
+        var target = question.candidate_slots.find(function (slot) {
+          return slot.member_id === question.target_member_id
+        })
+        var distractor = question.candidate_slots.find(function (slot) {
+          return slot.member_id !== question.target_member_id
+        })
+        positions[question.id] = targetOnLeftPlan[index]
+          ? { A: target.slot_id, B: distractor.slot_id, correct: "A" }
+          : { A: distractor.slot_id, B: target.slot_id, correct: "B" }
+      })
     })
 
-    var targetOnLeftPlan = shuffle(allQuestions.map(function (_, index) {
-      return index < Math.floor(allQuestions.length / 2)
-    }), random)
-
-    allQuestions.forEach(function (question, index) {
-      var target = question.candidate_slots.find(function (slot) {
-        return slot.member_id === question.target_member_id
-      })
-      var distractor = question.candidate_slots.find(function (slot) {
-        return slot.member_id !== question.target_member_id
-      })
-      positions[question.id] = targetOnLeftPlan[index]
-        ? { A: target.slot_id, B: distractor.slot_id, correct: "A" }
-        : { A: distractor.slot_id, B: target.slot_id, correct: "B" }
-    })
-
-    return {
+    var presentation = {
       seed: data.seed,
       participant_seed: hashSeed(participantSeed),
       group_order: groupOrder,
       question_order: questionOrder,
       positions: positions
     }
+    auditPresentation(presentation)
+    return presentation
+  }
+
+  function auditPresentation(presentation) {
+    data.groups.forEach(function (group) {
+      var correctA = 0
+      var correctB = 0
+      var candidateSlots = new Set()
+      var targetCounts = {}
+      group.questions.forEach(function (question) {
+        var position = presentation.positions[question.id]
+        if (!position) throw new Error("题目位置缺失 " + question.id)
+        if (position.correct === "A") correctA += 1
+        if (position.correct === "B") correctB += 1
+        candidateSlots.add(position.A)
+        candidateSlots.add(position.B)
+        targetCounts[question.target_member_id] = (targetCounts[question.target_member_id] || 0) + 1
+      })
+      if (correctA !== 5 || correctB !== 5) throw new Error(group.id + " 的 A/B 位置不平衡")
+      if (candidateSlots.size !== 20) throw new Error(group.id + " 的候选视频发生重复")
+      group.members.forEach(function (member) {
+        if (targetCounts[member.id] !== 5) throw new Error(group.id + " 的目标人物次数不平衡")
+      })
+    })
   }
 
   function groupById(id) {
@@ -148,7 +169,7 @@
       "<header class=\"app-intro-hero\"><h1 class=\"t-display\">人物动作感知实验</h1>" +
         "<p>根据人物的头部运动和表情，选出更适合扮演参考人物的候选人</p></header>" +
       "<div class=\"app-intro-grid\">" +
-        introCard("实验组成", data.groups.length + " 组实验｜3 组真人剧｜2 组 AI 剧｜每组 10 题") +
+        introCard("实验组成", data.groups.length + " 组实验｜3 组真人剧｜3 组 AI 剧｜每组 10 题") +
         introCard("参考视频", "同一人物的左视角、正中视角、右视角原始视频") +
         introCard("候选视频", "候选 A 与 B 分别来自目标人物和干扰人物，均采用统一换脸处理，位置随机排列") +
       "</div>" +

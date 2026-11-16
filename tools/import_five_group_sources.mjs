@@ -7,10 +7,13 @@ const siteDir = path.resolve(toolDir, "..")
 const defaultSourceRoot = "/Users/a1/Desktop/projects/个性化/七人物_视频页面素材包/videos"
 const sourceRootIndex = process.argv.indexOf("--source-root")
 const sourceRoot = path.resolve(sourceRootIndex >= 0 ? process.argv[sourceRootIndex + 1] : defaultSourceRoot)
+const defaultSupplementRoot = "/Users/a1/Desktop/projects/个性化/AI5_AI6_最终视频素材/videos"
+const supplementRootIndex = process.argv.indexOf("--supplement-root")
+const supplementRoot = path.resolve(supplementRootIndex >= 0 ? process.argv[supplementRootIndex + 1] : defaultSupplementRoot)
 const destinationRoot = path.join(siteDir, "videos", "source")
 const manifestPath = path.join(siteDir, "data", "source-video-manifest.json")
 const videoExtensions = new Set([".mp4", ".mov", ".m4v", ".webm"])
-const people = ["Sheldon", "Leonard", "Howard", "AI-1", "AI-3", "AI-4", "AI-7"]
+const people = ["Sheldon", "Leonard", "Howard", "AI-1", "AI-3", "AI-4", "AI-5", "AI-6", "AI-7"]
 const roles = [
   { directory: "reference_gt", expected: 3, label: "reference" },
   { directory: "candidate_faceswap", expected: 10, label: "candidate" }
@@ -27,7 +30,8 @@ async function videoFiles(directory) {
 const records = []
 for (const person of people) {
   for (const role of roles) {
-    const sourceDirectory = path.join(sourceRoot, person, role.directory)
+    const personSourceRoot = ["AI-5", "AI-6"].includes(person) ? supplementRoot : sourceRoot
+    const sourceDirectory = path.join(personSourceRoot, person, role.directory)
     const destinationDirectory = path.join(destinationRoot, person, role.directory)
     const files = await videoFiles(sourceDirectory)
     if (files.length !== role.expected) {
@@ -57,7 +61,7 @@ await fs.mkdir(path.dirname(manifestPath), { recursive: true })
 await fs.writeFile(manifestPath, JSON.stringify({
   schema_version: 1,
   generated_at: new Date().toISOString(),
-  source_root: sourceRoot,
+  source_roots: [sourceRoot, supplementRoot],
   people,
   totals: {
     people: people.length,
