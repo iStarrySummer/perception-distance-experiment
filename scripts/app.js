@@ -248,7 +248,8 @@
   function media(slot, label, className, dataName) {
     if (slot.path) {
       var poster = slot.path.replace("videos/processed/", "videos/posters/").replace(/\.mp4$/i, ".jpg")
-      return "<video class=\"app-video " + className + "\" muted playsinline preload=\"auto\" poster=\"" + escapeHtml(poster) + "\" aria-busy=\"true\" aria-label=\"" + escapeHtml(label) + "\" data-" + dataName + "=\"" + escapeHtml(slot.slot_id) + "\" src=\"" + escapeHtml(slot.path) + "\"></video>"
+      var playbackAttributes = className === "app-reference-video" ? " autoplay loop" : ""
+      return "<video class=\"app-video " + className + "\" muted playsinline preload=\"auto\"" + playbackAttributes + " poster=\"" + escapeHtml(poster) + "\" aria-busy=\"true\" aria-label=\"" + escapeHtml(label) + "\" data-" + dataName + "=\"" + escapeHtml(slot.slot_id) + "\" src=\"" + escapeHtml(slot.path) + "\"></video>"
     }
     return "<div class=\"app-video-placeholder " + className + "\" role=\"img\" aria-label=\"" + escapeHtml(label) + "等待填写\" data-" + dataName + "=\"" + escapeHtml(slot.slot_id) + "\">" +
       "<span>等待视频</span></div>"
@@ -332,15 +333,19 @@
   }
 
   function prepareCurrentVideo(video) {
+    var isReferenceVideo = video.classList.contains("app-reference-video")
     video.controls = false
     function revealControls() {
       video.controls = true
       video.classList.add("is-ready")
       video.setAttribute("aria-busy", "false")
+      if (isReferenceVideo) video.play().catch(function () {})
     }
     video.addEventListener("canplaythrough", revealControls, { once: true })
     video.addEventListener("error", revealControls, { once: true })
     applyPlaybackRate(video)
+    video.autoplay = isReferenceVideo
+    video.loop = isReferenceVideo
     video.load()
     if (video.readyState >= 4) revealControls()
   }
