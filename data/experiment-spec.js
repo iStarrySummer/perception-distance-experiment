@@ -6,8 +6,8 @@
     {
       id: "G1",
       participant_label: "第 1 组",
-      condition: "real_far",
-      condition_label: "真人远距离",
+      condition: "real_pair",
+      condition_label: "真人剧",
       members: [
         { id: "sheldon", admin_label: "Sheldon" },
         { id: "leonard", admin_label: "Leonard" }
@@ -16,51 +16,41 @@
     {
       id: "G2",
       participant_label: "第 2 组",
-      condition: "ai_near_4_7",
-      condition_label: "AI 短距离 1",
-      members: [
-        { id: "ai4", admin_label: "AI-4" },
-        { id: "ai7", admin_label: "AI-7" }
-      ]
-    },
-    {
-      id: "G3",
-      participant_label: "第 3 组",
-      condition: "ai_near_5_6",
-      condition_label: "AI 短距离 2",
-      members: [
-        { id: "ai5", admin_label: "AI-5" },
-        { id: "ai6", admin_label: "AI-6" },
-      ]
-    },
-    {
-      id: "G4",
-      participant_label: "第 4 组",
-      condition: "ai_near_4_5",
-      condition_label: "AI 短距离 3",
-      members: [
-        { id: "ai4", admin_label: "AI-4" },
-        { id: "ai5", admin_label: "AI-5" }
-      ]
-    },
-    {
-      id: "G5",
-      participant_label: "第 5 组",
-      condition: "real_far",
-      condition_label: "真人远距离",
+      condition: "real_pair",
+      condition_label: "真人剧",
       members: [
         { id: "leonard", admin_label: "Leonard" },
         { id: "howard", admin_label: "Howard" }
       ]
     },
     {
-      id: "G6",
-      participant_label: "第 6 组",
-      condition: "real_far",
-      condition_label: "真人远距离",
+      id: "G3",
+      participant_label: "第 3 组",
+      condition: "real_pair",
+      condition_label: "真人剧",
       members: [
         { id: "howard", admin_label: "Howard" },
         { id: "sheldon", admin_label: "Sheldon" }
+      ]
+    },
+    {
+      id: "G4",
+      participant_label: "第 4 组",
+      condition: "ai_pair_1_3",
+      condition_label: "AI 剧",
+      members: [
+        { id: "ai1", admin_label: "AI-1" },
+        { id: "ai3", admin_label: "AI-3" }
+      ]
+    },
+    {
+      id: "G5",
+      participant_label: "第 5 组",
+      condition: "ai_pair_4_7",
+      condition_label: "AI 剧",
+      members: [
+        { id: "ai4", admin_label: "AI-4" },
+        { id: "ai7", admin_label: "AI-7" }
       ]
     }
   ]
@@ -133,8 +123,8 @@
 
   window.PERCEPTION_EXPERIMENT = {
     schema_version: 1,
-    seed: 20261115,
-    fingerprint: "perception-distance-e1-v9",
+    seed: 20261116,
+    fingerprint: "perception-distance-e1-v11-left-center-right",
     preview_mode: false,
     ready: allSlots.every(function (item) { return Boolean(item.path) }),
     groups: groups,

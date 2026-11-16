@@ -41,6 +41,11 @@
     return parts.length > 1 ? parts[1] : "—"
   }
 
+  function versionFromKey(key) {
+    var match = String(key).match(/perception-distance-e1-v\d+(?:-[a-z]+(?:-[a-z]+)*)?/i)
+    return match ? match[0] : "旧版本"
+  }
+
   function loadDashboard() {
     dashboardStatus.textContent = "正在读取数据…"
     return api("/api/admin/submissions").then(function (result) {
@@ -49,9 +54,9 @@
       logoutButton.hidden = false
       document.getElementById("submission-count").textContent = result.count
       document.getElementById("submission-list").innerHTML = result.items.map(function (item) {
-        return "<tr><td>" + participantFromKey(item.key) + "</td><td>" + new Date(item.uploaded).toLocaleString("zh-CN") + "</td><td>" + formatBytes(item.size) + "</td>" +
+        return "<tr><td>" + participantFromKey(item.key) + "</td><td>" + versionFromKey(item.key) + "</td><td>" + new Date(item.uploaded).toLocaleString("zh-CN") + "</td><td>" + formatBytes(item.size) + "</td>" +
           "<td><button class=\"admin-download\" data-key=\"" + item.key.replace(/&/g, "&amp;").replace(/\"/g, "&quot;") + "\">下载 CSV</button></td></tr>"
-      }).join("") || "<tr><td colspan=\"4\">暂未收到数据</td></tr>"
+      }).join("") || "<tr><td colspan=\"5\">暂未收到数据</td></tr>"
       dashboardStatus.textContent = ""
       Array.from(document.querySelectorAll("[data-key]")).forEach(function (button) {
         button.addEventListener("click", function () { downloadCsv(button.dataset.key) })

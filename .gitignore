@@ -1,0 +1,5 @@
+node_modules
+outputs/*_preview.png
+outputs/*.inspect.ndjson
+videos/processed/
+videos/posters/

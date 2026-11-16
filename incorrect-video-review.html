@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>重点视频筛选</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/incorrect-video-review.css?v=1">
+  <script defer src="data/archive/perception-distance-e1-v9/video-paths.js?v=9"></script>
+  <script defer src="data/archive/perception-distance-e1-v9/experiment-spec.js?v=9"></script>
+  <script defer src="data/archive/perception-distance-e1-v9/incorrect-video-stats.js?v=9"></script>
+  <script defer src="scripts/incorrect-video-review.js?v=1"></script>
+</head>
+<body>
+  <header class="incorrect-head">
+    <div>
+      <span>INCORRECT VIDEO REVIEW</span>
+      <h1>重点视频筛选</h1>
+    </div>
+    <label>播放速度
+      <select id="playback-rate">
+        <option value="0.75">0.75×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.5">1.5×</option>
+        <option value="2">2×</option>
+      </select>
+    </label>
+  </header>
+
+  <main class="incorrect-main">
+    <section class="summary-grid" id="summary-grid"></section>
+    <section class="group-summary" id="group-summary"></section>
+    <section class="filter-bar">
+      <label>查看内容
+        <select id="review-mode">
+          <option value="real-incorrect" selected>真人剧 · 重复答错</option>
+          <option value="ai-correct">AI 剧 · 重复答对</option>
+          <option value="all-incorrect">全部 · 重复答错</option>
+        </select>
+      </label>
+      <label>实验组
+        <select id="group-filter"><option value="all">全部</option></select>
+      </label>
+      <label>最少重复人数
+        <select id="minimum-filter">
+          <option value="1">1 人</option>
+          <option value="2">2 人</option>
+          <option value="3" selected>3 人</option>
+          <option value="4">4 人</option>
+          <option value="5">5 人</option>
+          <option value="6">6 人</option>
+          <option value="7">7 人</option>
+          <option value="8">8 人</option>
+        </select>
+      </label>
+      <strong id="visible-count"></strong>
+    </section>
+    <section class="issue-list" id="issue-list"></section>
+  </main>
+
+  <noscript><p class="incorrect-error">请启用浏览器中的 JavaScript</p></noscript>
+</body>
+</html>

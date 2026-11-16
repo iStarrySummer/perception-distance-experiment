@@ -1,35 +1,55 @@
 # 人物动作感知实验一
 
-## 当前状态
+## 当前版本
 
-- 六组实验页面结构已经完成
-- 每组 10 道题，共 60 道
+- 实验版本：`perception-distance-e1-v11-left-center-right`
+- 5 组实验，每组 10 道题，共 50 道题
 - 每组两个人物各作为 5 道题的参考目标
+- 7 个人物各有 3 个未换脸 GT 参考视频和 10 个 GT 换脸候选视频
+- 三个参考视频固定按左视角、正中视角、右视角排列
+- 共 91 个不同原始视频、130 个实验站位
 - 页面只向参与者显示实验组序号
-- 六组共 156 个视频路径已经填写
-- 156 个网站视频已经裁掉黑边并保留完整人物画面比例
-- 156 个视频均已生成首帧封面，页面会提前加载当前题和后续 3 道题的视频
-- 每道题的两个候选视频已经按较短视频统一帧数和时长
+- 每道题的两个候选视频按较短视频统一帧数和时长
 
 ## 实验组
 
-- `G1`：Sheldon 与 Leonard，后台条件为真人远距离
-- `G2`：AI-4 与 AI-7，后台条件为 AI 短距离 1
-- `G3`：AI-5 与 AI-6，后台条件为 AI 短距离 2
-- `G4`：AI-4 与 AI-5，后台条件为 AI 短距离 3
-- `G5`：Leonard 与 Howard，后台条件为真人远距离
-- `G6`：Howard 与 Sheldon，后台条件为真人远距离
+- `G1`：Sheldon 与 Leonard，真人剧
+- `G2`：Leonard 与 Howard，真人剧
+- `G3`：Howard 与 Sheldon，真人剧
+- `G4`：AI-1 与 AI-3，AI 剧
+- `G5`：AI-4 与 AI-7，AI 剧
 
-这些标签只写入导出数据，不显示给参与者
+这些人物名称只写入导出数据，不显示给参与者
+
+## 视频来源
+
+原始素材来自
+
+```text
+/Users/a1/Desktop/projects/个性化/七人物_视频页面素材包/videos
+```
+
+使用下列命令将 91 个原始视频复制到项目，并生成来源清单
+
+```bash
+node tools/import_five_group_sources.mjs
+```
+
+Parameters
+
+- `tools/import_five_group_sources.mjs`：检查 7 个人物的视频数量，复制原始视频，生成 `data/source-video-manifest.json`
+- `--source-root <path>`：可选，指定其他原始素材根目录
+
+项目副本位于 `videos/source`，不会修改或删除桌面原始素材
 
 ## 视频站位
 
-- 每个人物需要 3 个参考视频
-- 每个人物需要 10 个候选视频
+- 每个人物有 3 个参考视频和 10 个候选视频
 - 每组需要 26 个视频站位
-- 六组共需要 156 个视频站位
-- 参考视频不能再次作为候选视频
-- 候选视频在同一组内不能重复
+- 5 组共 130 个视频站位
+- 相同人物参与多组比较时复用同一批原始视频
+- 同一组内参考视频不作为候选视频
+- 同一组内候选视频不重复
 
 站位编号格式
 
@@ -37,71 +57,51 @@
 组别-人物-用途-序号
 ```
 
-示例
+例如
 
 ```text
 G1-SHELDON-REF-01
 G1-SHELDON-CAND-01
 ```
 
-## 路径接入
+## 页面
 
-原始路径与处理后路径统一写入 `data/video-paths.js`
-
-```javascript
-window.PERCEPTION_SOURCE_VIDEO_PATHS = {
-  "G1-SHELDON-REF-01": "videos/g1/sheldon/reference_01.mp4"
-}
-```
-
-页面结构和题目规则不需要随路径修改
-
-## 预览网站
-
-直接打开 `index.html` 可以查看正式实验
+- `index.html`：当前 5 组、50 题正式实验
+- `admin.html`：云端数据后台
+- `original-video-review.html`：查看当前 7 个人物各 13 个未裁剪原始视频
+- `incorrect-video-review.html`：查看旧六组实验的 8 人重复结果
 
 正式实验支持
 
-- 六组顺序随机
+- 5 组顺序随机
 - 每组题目顺序随机
-- A、B 位置随机且总计左右各 30 次
-- 选择动画
-- 重新选择
-- 下一题
+- A、B 位置随机，50 题中正确答案左右各 25 次
+- 选择动画与重新选择
+- 候选视频播放完成限制
 - 断点恢复
 - CSV 导出
-- 完成后自动保存 CSV 到云端
-- 自动去重与失败重试
-- 完成并保存后可使用同一匿名编号再做一次
-- 每次重做使用独立作答批次，不覆盖旧数据
+- 完成后自动保存到云端
+- 使用同一匿名编号重复完成实验
 
-## 数据后台
+## 旧实验归档
 
-管理员页面位于 `admin.html`
+旧版 `perception-distance-e1-v9` 配置、8 人统计和处理报告保存在
 
-- 显示已经收到的完整实验份数
-- 显示匿名编号、完成时间和文件大小
-- 支持逐份下载 CSV
-- 管理员密钥仅保存在云端运行环境，不写入公开网页
-
-## 站位检查
-
-```bash
-node tools/validate_slots.mjs --allow-empty
+```text
+data/archive/perception-distance-e1-v9/
 ```
 
-Parameters
+旧数据是 6 组、60 题，不能与当前 5 组、50 题数据混合统计
 
-- `tools/validate_slots.mjs`：检查实验组、题目、站位、人物和候选关系
-- `--allow-empty`：页面搭建阶段允许路径为空
-
-路径填写完成后运行
+## 站位检查
 
 ```bash
 node tools/validate_slots.mjs
 ```
 
-不带 `--allow-empty` 时，空路径或不存在的视频文件会导致检查失败
+Parameters
+
+- `tools/validate_slots.mjs`：检查 5 组、50 道题、130 个站位、视频文件和首帧封面
 
 ## 视频处理
 
@@ -111,10 +111,10 @@ node tools/process_videos.mjs --force
 
 Parameters
 
-- `tools/process_videos.mjs`：逐段检测黑边、裁剪画面并验证输出
-- `--force`：重新生成已有的处理后视频
+- `tools/process_videos.mjs`：检测黑边、裁剪画面、统一候选视频帧数并验证输出
+- `--force`：重新生成已有的站位视频
 
-处理结果保存在 `videos/processed`，视频使用裁剪后的真实纵横比并显示完整画面，原始视频不会被修改
+处理结果保存在 `videos/processed`，原始视频不会被修改
 
 ## 首帧封面
 
@@ -124,6 +124,6 @@ node tools/generate_posters.mjs
 
 Parameters
 
-- `tools/generate_posters.mjs`：为每个处理后视频生成首帧封面，减少页面切换时出现黑色加载画面
+- `tools/generate_posters.mjs`：为当前 130 个处理后视频生成首帧封面
 
-首帧封面保存在 `videos/posters`，不会修改视频文件
+首帧封面保存在 `videos/posters`

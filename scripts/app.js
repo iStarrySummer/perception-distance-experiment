@@ -131,6 +131,7 @@
 
   function render() {
     advancing = false
+    document.body.classList.toggle("app-on-intro", state.screen !== "transition" && state.screen !== "question" && state.screen !== "complete")
     renderShell()
     if (state.screen === "transition") renderTransition()
     else if (state.screen === "question") renderQuestion()
@@ -144,18 +145,28 @@
       ? "<div class=\"app-preview-note\"><strong>页面结构预览</strong><span>视频路径填写后再固定正式题单</span></div>"
       : ""
     app.innerHTML = "<section class=\"app-intro app-enter\">" +
-      "<div class=\"app-intro__main app-card\">" +
-        "<div><span class=\"app-kicker t-meta\">Experiment 01</span>" +
-        "<h1 class=\"t-display\">本次实验共 " + data.groups.length + " 组</h1></div>" +
-        "<p>每组请选择与上方参考视频在表情和头部运动上更接近的候选视频</p>" +
-        "<div class=\"app-metrics\">" + metric(data.groups.length, "组") + metric(data.totals.questions, "道题") + metric("A/B", "二选一") + "</div>" +
-        "<section class=\"app-tips\" aria-labelledby=\"tips-title\"><h2 class=\"t-heading\" id=\"tips-title\">温馨提示</h2>" +
-          "<div class=\"app-tip\"><span class=\"app-tip__number\">1</span><p>默认播放速度为 2 倍速，可以自行调整</p></div>" +
-          "<div class=\"app-tip\"><span class=\"app-tip__number\">2</span><p>两个候选视频均播放完成后，才可以进入下一题</p></div>" +
-        "</section>" +
-        preview +
-        "<div class=\"app-actions\"><button class=\"app-btn app-btn--primary\" id=\"start-button\"" + (data.ready || data.preview_mode ? "" : " disabled") + ">开始实验 →</button></div>" +
+      "<header class=\"app-intro-hero\"><h1 class=\"t-display\">人物动作感知实验</h1>" +
+        "<p>根据人物的头部运动和表情，选出更适合扮演参考人物的候选人</p></header>" +
+      "<div class=\"app-intro-grid\">" +
+        introCard("实验组成", data.groups.length + " 组实验｜3 组真人剧｜2 组 AI 剧｜每组 10 题") +
+        introCard("参考视频", "同一人物的左视角、正中视角、右视角原始视频") +
+        introCard("候选视频", "候选 A 与 B 分别来自目标人物和干扰人物，均采用统一换脸处理，位置随机排列") +
       "</div>" +
+      "<section class=\"app-judging app-card\" aria-labelledby=\"judging-title\">" +
+        "<h2 class=\"t-display\" id=\"judging-title\">判断任务</h2>" +
+        "<p class=\"app-judging__lead\">选出更适合扮演上方参考人物的候选人</p>" +
+        "<div class=\"app-judging__rules\"><span>只比较头部运动和表情</span><span>不参考眼睛大小、脸型等身份外观</span><span>优先比较相同头部朝向的视频</span></div>" +
+      "</section>" +
+      "<div class=\"app-step-grid\">" +
+        stepCard("Step 1", "对照视频", "依次播放两个候选视频，优先对照相同头部朝向的参考视频，无法判断时再查看其他朝向") +
+        stepCard("Step 2", "头部运动", "比较头部转动方向、转动幅度和转动速度") +
+        stepCard("Step 3", "表情变化", "比较表情强度，重点观察眉毛、嘴唇和鼻子，注意皱眉与挑眉") +
+      "</div>" +
+      "<section class=\"app-intro-tips app-card\" aria-labelledby=\"tips-title\"><h2 class=\"t-heading\" id=\"tips-title\">温馨提示</h2>" +
+        "<div><span>默认 2 倍速播放，可以自行调整</span><span>两个候选视频均播放完毕后才能进入下一题</span><span>可以反复播放视频</span></div>" +
+      "</section>" +
+      preview +
+      "<div class=\"app-intro-actions\"><button class=\"app-btn app-btn--primary\" id=\"start-button\"" + (data.ready || data.preview_mode ? "" : " disabled") + ">开始实验</button></div>" +
     "</section>"
 
     document.getElementById("start-button").addEventListener("click", function () {
@@ -166,6 +177,14 @@
       state.questionStartedAt = null
       saveAndRender()
     })
+  }
+
+  function introCard(title, body) {
+    return "<article class=\"app-intro-card app-card\"><h2 class=\"t-heading\">" + escapeHtml(title) + "</h2><p>" + escapeHtml(body) + "</p></article>"
+  }
+
+  function stepCard(number, title, body) {
+    return "<article class=\"app-step-card app-card\"><h2 class=\"t-heading\"><span>" + escapeHtml(number) + "</span> " + escapeHtml(title) + "</h2><p>" + escapeHtml(body) + "</p></article>"
   }
 
   function metric(value, label) {
@@ -190,7 +209,7 @@
 
   function pageHead() {
     var width = Math.min(100, state.answers.length / data.totals.questions * 100)
-    return "<div class=\"app-page-head\"><div><span class=\"app-kicker t-meta\">实验组 " + (state.groupIndex + 1) + " / " + data.groups.length + "</span>" +
+    return "<div class=\"app-page-head\"><div><span class=\"app-kicker t-meta\">实验组 " + (state.groupIndex + 1) + " / " + data.groups.length + " · 第 " + (state.questionIndex + 1) + " / 10 题</span>" +
       "<h1 class=\"t-heading\">人物动作判断</h1></div>" +
       "<div class=\"app-page-tools\">" + playbackRateControl() +
       "<div class=\"app-progress-group\"><div class=\"app-progress-copy t-meta\"><span>总进度</span><strong>" + state.answers.length + " / " + data.totals.questions + "</strong></div>" +
@@ -370,20 +389,32 @@
 
     app.innerHTML = "<section class=\"app-question-page app-enter\">" +
       pageHead() +
-      "<section class=\"app-reference-collection app-card\" aria-labelledby=\"reference-title\">" +
-        "<header class=\"app-section-head\"><div><span class=\"app-kicker t-meta\">参考视频</span><h2 class=\"t-heading\" id=\"reference-title\">观察同一目标的表情和头部运动</h2></div>" +
-        "<strong class=\"app-question-count\">第 " + (state.questionIndex + 1) + " / 10 题</strong></header>" +
-        "<div class=\"app-reference-grid\">" + question.reference_slots.map(function (slot, index) {
-          return "<article class=\"app-reference-item\"><span class=\"t-label\">参考 " + (index + 1) + "</span>" +
-            media(slot, "参考视频 " + (index + 1), "app-reference-video", "reference-slot") + "</article>"
-        }).join("") + "</div>" +
-      "</section>" +
-      "<section class=\"app-candidate-zone\" id=\"candidate-zone\">" +
-        "<header class=\"app-section-head app-candidate-head\"><div><span class=\"app-kicker t-meta\">候选视频</span><h2 class=\"t-heading\">只比较表情和头部运动，哪一个候选项更接近上方参考</h2>" +
-        "<p class=\"app-heading-notes\"><small>（可以针对性地寻找相同头部朝向的视频作为参考）</small><small>（候选视频均观看完毕才能切换至下一题）</small></p></div></header>" +
-        "<div class=\"app-candidate-grid\">" + candidateCard("A", candidateA) + candidateCard("B", candidateB) + "</div>" +
-        "<div class=\"app-question-actions\"><button class=\"app-btn app-btn--primary\" id=\"next-question\" disabled>" + nextLabel() + "</button></div>" +
-      "</section>" +
+      "<div class=\"app-question-layout\">" +
+        "<aside class=\"app-judge-panel app-card\" aria-labelledby=\"judge-title\">" +
+          "<div class=\"app-judge-intro\"><h2 class=\"t-display\" id=\"judge-title\">判断任务</h2>" +
+          "<p class=\"app-judge-lead\">选出最适合扮演上方参考人物的候选人</p></div>" +
+          "<p class=\"app-judge-rule\">只比较头部运动和表情，不参考眼睛大小、脸型等身份外观</p>" +
+          judgeStep("1", "Step 1 对照视频", "播放一个候选视频 → 查看相同头部朝向的参考视频 → 再查看另一个候选视频；无法判断时，再依次查看其他朝向的参考视频") +
+          judgeStep("2", "Step 2 头部运动", "比较头部转动幅度和速度") +
+          judgeStep("3", "Step 3 表情变化", "比较表情强度，重点观察眉毛、嘴唇和鼻子；注意皱眉、挑眉和嘴部变化") +
+          "<p class=\"app-judge-limit\">候选 A、B 均观看完毕后才能进入下一题</p>" +
+        "</aside>" +
+        "<div class=\"app-question-content\">" +
+          "<section class=\"app-reference-collection app-card\" aria-labelledby=\"reference-title\">" +
+            "<header class=\"app-section-head\"><div><span class=\"app-kicker t-meta\">参考视频</span><h2 class=\"t-heading\" id=\"reference-title\">观察同一目标的表情和头部运动</h2></div></header>" +
+            "<div class=\"app-reference-grid\">" + question.reference_slots.map(function (slot, index) {
+              var referenceLabels = ["左侧参考", "正面参考", "右侧参考"]
+              return "<article class=\"app-reference-item\"><span class=\"t-label\">" + referenceLabels[index] + "</span>" +
+                media(slot, referenceLabels[index], "app-reference-video", "reference-slot") + "</article>"
+            }).join("") + "</div>" +
+          "</section>" +
+          "<section class=\"app-candidate-zone\" id=\"candidate-zone\">" +
+            "<header class=\"app-section-head app-candidate-head\"><div><span class=\"app-kicker t-meta\">候选视频</span><h2 class=\"t-heading\">选择更接近上方参考人物的候选视频</h2></div></header>" +
+            "<div class=\"app-candidate-grid\">" + candidateCard("A", candidateA) + candidateCard("B", candidateB) + "</div>" +
+            "<div class=\"app-question-actions\"><p id=\"question-status\">请完整观看候选 A 和候选 B</p><button class=\"app-btn app-btn--primary\" id=\"next-question\" disabled>" + nextLabel() + "</button></div>" +
+          "</section>" +
+        "</div>" +
+      "</div>" +
     "</section>"
 
     Array.from(app.querySelectorAll("video")).forEach(function (video) {
@@ -392,8 +423,12 @@
     preloadQuestionWindow(group)
     bindPlaybackRateControls()
     var nextButton = document.getElementById("next-question")
+    var questionStatus = document.getElementById("question-status")
     function updateNextButton() {
       nextButton.disabled = !selectedChoice || completedCandidates.size < 2
+      if (completedCandidates.size < 2) questionStatus.textContent = "请完整观看候选 A 和候选 B"
+      else if (!selectedChoice) questionStatus.textContent = "候选视频已观看完毕，请选择 A 或 B"
+      else questionStatus.textContent = "已完成观看和选择，可以进入下一题"
     }
     Array.from(document.querySelectorAll(".app-candidate-video")).forEach(function (video) {
       requireCompletePlayback(video, completedCandidates, updateNextButton)
@@ -425,6 +460,10 @@
         else render()
       }, 280)
     })
+  }
+
+  function judgeStep(number, title, body) {
+    return "<section class=\"app-judge-step\"><h3><span>" + escapeHtml(number) + "</span>" + escapeHtml(title) + "</h3><p>" + escapeHtml(body) + "</p></section>"
   }
 
   function candidateCard(position, slot) {
@@ -687,7 +726,7 @@
     var blob = new Blob(["\ufeff" + rows.join("\r\n")], { type: "text/csv;charset=utf-8" })
     var link = document.createElement("a")
     link.href = URL.createObjectURL(blob)
-    link.download = "perception_distance_experiment_" + state.participantId + "_" + state.attemptId + ".csv"
+    link.download = "perception_distance_experiment_" + state.participantId + "_" + data.fingerprint + "_" + state.attemptId + ".csv"
     document.body.appendChild(link)
     link.click()
     link.remove()

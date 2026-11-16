@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>原始视频统一查看</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/original-video-review.css?v=1">
+  <script defer src="data/video-paths.js?v=10"></script>
+  <script defer src="scripts/original-video-review.js?v=2"></script>
+</head>
+<body>
+  <header class="review-head">
+    <div>
+      <span class="review-kicker">ORIGINAL VIDEO REVIEW</span>
+      <h1>原始视频统一查看</h1>
+      <p>7 个人物 · 每人 13 个原始视频 · 保留完整画面</p>
+    </div>
+    <div class="review-speed">
+      <label for="playback-rate">播放速度</label>
+      <select id="playback-rate">
+        <option value="0.75">0.75×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.5">1.5×</option>
+        <option value="2">2×</option>
+      </select>
+    </div>
+  </header>
+
+  <nav class="review-nav" id="review-nav" aria-label="人物导航"></nav>
+  <main class="review-main" id="review-main"></main>
+
+  <noscript>
+    <p class="review-error">请启用浏览器中的 JavaScript</p>
+  </noscript>
+</body>
+</html>

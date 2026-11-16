@@ -1,0 +1,2751 @@
+{
+  "generated_at": "2026-11-16T03:26:23.118Z",
+  "source_video_count": 130,
+  "output_video_count": 130,
+  "frame_rate": 25,
+  "output_size": "cropped-native",
+  "candidate_pairs": [
+    {
+      "question_id": "G1-Q01",
+      "candidate_slots": [
+        "G1-SHELDON-CAND-01",
+        "G1-LEONARD-CAND-01"
+      ],
+      "source_frames": [
+        208,
+        213
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        8.32,
+        8.52
+      ],
+      "target_frames": 208,
+      "target_duration_seconds": 8.32
+    },
+    {
+      "question_id": "G1-Q02",
+      "candidate_slots": [
+        "G1-SHELDON-CAND-02",
+        "G1-LEONARD-CAND-02"
+      ],
+      "source_frames": [
+        164,
+        142
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        6.56,
+        5.68
+      ],
+      "target_frames": 142,
+      "target_duration_seconds": 5.68
+    },
+    {
+      "question_id": "G1-Q03",
+      "candidate_slots": [
+        "G1-SHELDON-CAND-03",
+        "G1-LEONARD-CAND-03"
+      ],
+      "source_frames": [
+        152,
+        123
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        6.08,
+        4.92
+      ],
+      "target_frames": 123,
+      "target_duration_seconds": 4.92
+    },
+    {
+      "question_id": "G1-Q04",
+      "candidate_slots": [
+        "G1-SHELDON-CAND-04",
+        "G1-LEONARD-CAND-04"
+      ],
+      "source_frames": [
+        114,
+        117
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        4.56,
+        4.68
+      ],
+      "target_frames": 114,
+      "target_duration_seconds": 4.56
+    },
+    {
+      "question_id": "G1-Q05",
+      "candidate_slots": [
+        "G1-SHELDON-CAND-05",
+        "G1-LEONARD-CAND-05"
+      ],
+      "source_frames": [
+        204,
+        192
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        8.16,
+        7.68
+      ],
+      "target_frames": 192,
+      "target_duration_seconds": 7.68
+    },
+    {
+      "question_id": "G1-Q06",
+      "candidate_slots": [
+        "G1-SHELDON-CAND-06",
+        "G1-LEONARD-CAND-06"
+      ],
+      "source_frames": [
+        135,
+        171
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.4,
+        6.84
+      ],
+      "target_frames": 135,
+      "target_duration_seconds": 5.4
+    },
+    {
+      "question_id": "G1-Q07",
+      "candidate_slots": [
+        "G1-SHELDON-CAND-07",
+        "G1-LEONARD-CAND-07"
+      ],
+      "source_frames": [
+        132,
+        130
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.28,
+        5.2
+      ],
+      "target_frames": 130,
+      "target_duration_seconds": 5.2
+    },
+    {
+      "question_id": "G1-Q08",
+      "candidate_slots": [
+        "G1-SHELDON-CAND-08",
+        "G1-LEONARD-CAND-08"
+      ],
+      "source_frames": [
+        139,
+        126
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.56,
+        5.04
+      ],
+      "target_frames": 126,
+      "target_duration_seconds": 5.04
+    },
+    {
+      "question_id": "G1-Q09",
+      "candidate_slots": [
+        "G1-SHELDON-CAND-09",
+        "G1-LEONARD-CAND-09"
+      ],
+      "source_frames": [
+        127,
+        113
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.08,
+        4.52
+      ],
+      "target_frames": 113,
+      "target_duration_seconds": 4.52
+    },
+    {
+      "question_id": "G1-Q10",
+      "candidate_slots": [
+        "G1-SHELDON-CAND-10",
+        "G1-LEONARD-CAND-10"
+      ],
+      "source_frames": [
+        108,
+        112
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        4.32,
+        4.48
+      ],
+      "target_frames": 108,
+      "target_duration_seconds": 4.32
+    },
+    {
+      "question_id": "G2-Q01",
+      "candidate_slots": [
+        "G2-LEONARD-CAND-01",
+        "G2-HOWARD-CAND-01"
+      ],
+      "source_frames": [
+        213,
+        132
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        8.52,
+        5.28
+      ],
+      "target_frames": 132,
+      "target_duration_seconds": 5.28
+    },
+    {
+      "question_id": "G2-Q02",
+      "candidate_slots": [
+        "G2-LEONARD-CAND-02",
+        "G2-HOWARD-CAND-02"
+      ],
+      "source_frames": [
+        142,
+        125
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.68,
+        5
+      ],
+      "target_frames": 125,
+      "target_duration_seconds": 5
+    },
+    {
+      "question_id": "G2-Q03",
+      "candidate_slots": [
+        "G2-LEONARD-CAND-03",
+        "G2-HOWARD-CAND-03"
+      ],
+      "source_frames": [
+        123,
+        90
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        4.92,
+        3.6
+      ],
+      "target_frames": 90,
+      "target_duration_seconds": 3.6
+    },
+    {
+      "question_id": "G2-Q04",
+      "candidate_slots": [
+        "G2-LEONARD-CAND-04",
+        "G2-HOWARD-CAND-04"
+      ],
+      "source_frames": [
+        117,
+        72
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        4.68,
+        2.88
+      ],
+      "target_frames": 72,
+      "target_duration_seconds": 2.88
+    },
+    {
+      "question_id": "G2-Q05",
+      "candidate_slots": [
+        "G2-LEONARD-CAND-05",
+        "G2-HOWARD-CAND-05"
+      ],
+      "source_frames": [
+        192,
+        137
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        7.68,
+        5.48
+      ],
+      "target_frames": 137,
+      "target_duration_seconds": 5.48
+    },
+    {
+      "question_id": "G2-Q06",
+      "candidate_slots": [
+        "G2-LEONARD-CAND-06",
+        "G2-HOWARD-CAND-06"
+      ],
+      "source_frames": [
+        171,
+        135
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        6.84,
+        5.4
+      ],
+      "target_frames": 135,
+      "target_duration_seconds": 5.4
+    },
+    {
+      "question_id": "G2-Q07",
+      "candidate_slots": [
+        "G2-LEONARD-CAND-07",
+        "G2-HOWARD-CAND-07"
+      ],
+      "source_frames": [
+        130,
+        112
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.2,
+        4.48
+      ],
+      "target_frames": 112,
+      "target_duration_seconds": 4.48
+    },
+    {
+      "question_id": "G2-Q08",
+      "candidate_slots": [
+        "G2-LEONARD-CAND-08",
+        "G2-HOWARD-CAND-08"
+      ],
+      "source_frames": [
+        126,
+        154
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.04,
+        6.16
+      ],
+      "target_frames": 126,
+      "target_duration_seconds": 5.04
+    },
+    {
+      "question_id": "G2-Q09",
+      "candidate_slots": [
+        "G2-LEONARD-CAND-09",
+        "G2-HOWARD-CAND-09"
+      ],
+      "source_frames": [
+        113,
+        130
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        4.52,
+        5.2
+      ],
+      "target_frames": 113,
+      "target_duration_seconds": 4.52
+    },
+    {
+      "question_id": "G2-Q10",
+      "candidate_slots": [
+        "G2-LEONARD-CAND-10",
+        "G2-HOWARD-CAND-10"
+      ],
+      "source_frames": [
+        112,
+        128
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        4.48,
+        5.12
+      ],
+      "target_frames": 112,
+      "target_duration_seconds": 4.48
+    },
+    {
+      "question_id": "G3-Q01",
+      "candidate_slots": [
+        "G3-HOWARD-CAND-01",
+        "G3-SHELDON-CAND-01"
+      ],
+      "source_frames": [
+        132,
+        208
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.28,
+        8.32
+      ],
+      "target_frames": 132,
+      "target_duration_seconds": 5.28
+    },
+    {
+      "question_id": "G3-Q02",
+      "candidate_slots": [
+        "G3-HOWARD-CAND-02",
+        "G3-SHELDON-CAND-02"
+      ],
+      "source_frames": [
+        125,
+        164
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5,
+        6.56
+      ],
+      "target_frames": 125,
+      "target_duration_seconds": 5
+    },
+    {
+      "question_id": "G3-Q03",
+      "candidate_slots": [
+        "G3-HOWARD-CAND-03",
+        "G3-SHELDON-CAND-03"
+      ],
+      "source_frames": [
+        90,
+        152
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        3.6,
+        6.08
+      ],
+      "target_frames": 90,
+      "target_duration_seconds": 3.6
+    },
+    {
+      "question_id": "G3-Q04",
+      "candidate_slots": [
+        "G3-HOWARD-CAND-04",
+        "G3-SHELDON-CAND-04"
+      ],
+      "source_frames": [
+        72,
+        114
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.88,
+        4.56
+      ],
+      "target_frames": 72,
+      "target_duration_seconds": 2.88
+    },
+    {
+      "question_id": "G3-Q05",
+      "candidate_slots": [
+        "G3-HOWARD-CAND-05",
+        "G3-SHELDON-CAND-05"
+      ],
+      "source_frames": [
+        137,
+        204
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.48,
+        8.16
+      ],
+      "target_frames": 137,
+      "target_duration_seconds": 5.48
+    },
+    {
+      "question_id": "G3-Q06",
+      "candidate_slots": [
+        "G3-HOWARD-CAND-06",
+        "G3-SHELDON-CAND-06"
+      ],
+      "source_frames": [
+        135,
+        135
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.4,
+        5.4
+      ],
+      "target_frames": 135,
+      "target_duration_seconds": 5.4
+    },
+    {
+      "question_id": "G3-Q07",
+      "candidate_slots": [
+        "G3-HOWARD-CAND-07",
+        "G3-SHELDON-CAND-07"
+      ],
+      "source_frames": [
+        112,
+        132
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        4.48,
+        5.28
+      ],
+      "target_frames": 112,
+      "target_duration_seconds": 4.48
+    },
+    {
+      "question_id": "G3-Q08",
+      "candidate_slots": [
+        "G3-HOWARD-CAND-08",
+        "G3-SHELDON-CAND-08"
+      ],
+      "source_frames": [
+        154,
+        139
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        6.16,
+        5.56
+      ],
+      "target_frames": 139,
+      "target_duration_seconds": 5.56
+    },
+    {
+      "question_id": "G3-Q09",
+      "candidate_slots": [
+        "G3-HOWARD-CAND-09",
+        "G3-SHELDON-CAND-09"
+      ],
+      "source_frames": [
+        130,
+        127
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.2,
+        5.08
+      ],
+      "target_frames": 127,
+      "target_duration_seconds": 5.08
+    },
+    {
+      "question_id": "G3-Q10",
+      "candidate_slots": [
+        "G3-HOWARD-CAND-10",
+        "G3-SHELDON-CAND-10"
+      ],
+      "source_frames": [
+        128,
+        108
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        5.12,
+        4.32
+      ],
+      "target_frames": 108,
+      "target_duration_seconds": 4.32
+    },
+    {
+      "question_id": "G4-Q01",
+      "candidate_slots": [
+        "G4-AI1-CAND-01",
+        "G4-AI3-CAND-01"
+      ],
+      "source_frames": [
+        118,
+        178
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        4.72,
+        7.12
+      ],
+      "target_frames": 118,
+      "target_duration_seconds": 4.72
+    },
+    {
+      "question_id": "G4-Q02",
+      "candidate_slots": [
+        "G4-AI1-CAND-02",
+        "G4-AI3-CAND-02"
+      ],
+      "source_frames": [
+        80,
+        157
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        3.2,
+        6.28
+      ],
+      "target_frames": 80,
+      "target_duration_seconds": 3.2
+    },
+    {
+      "question_id": "G4-Q03",
+      "candidate_slots": [
+        "G4-AI1-CAND-03",
+        "G4-AI3-CAND-03"
+      ],
+      "source_frames": [
+        70,
+        149
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.8,
+        5.96
+      ],
+      "target_frames": 70,
+      "target_duration_seconds": 2.8
+    },
+    {
+      "question_id": "G4-Q04",
+      "candidate_slots": [
+        "G4-AI1-CAND-04",
+        "G4-AI3-CAND-04"
+      ],
+      "source_frames": [
+        67,
+        149
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.68,
+        5.96
+      ],
+      "target_frames": 67,
+      "target_duration_seconds": 2.68
+    },
+    {
+      "question_id": "G4-Q05",
+      "candidate_slots": [
+        "G4-AI1-CAND-05",
+        "G4-AI3-CAND-05"
+      ],
+      "source_frames": [
+        53,
+        126
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.12,
+        5.04
+      ],
+      "target_frames": 53,
+      "target_duration_seconds": 2.12
+    },
+    {
+      "question_id": "G4-Q06",
+      "candidate_slots": [
+        "G4-AI1-CAND-06",
+        "G4-AI3-CAND-06"
+      ],
+      "source_frames": [
+        52,
+        122
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.08,
+        4.88
+      ],
+      "target_frames": 52,
+      "target_duration_seconds": 2.08
+    },
+    {
+      "question_id": "G4-Q07",
+      "candidate_slots": [
+        "G4-AI1-CAND-07",
+        "G4-AI3-CAND-07"
+      ],
+      "source_frames": [
+        47,
+        107
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        1.88,
+        4.28
+      ],
+      "target_frames": 47,
+      "target_duration_seconds": 1.88
+    },
+    {
+      "question_id": "G4-Q08",
+      "candidate_slots": [
+        "G4-AI1-CAND-08",
+        "G4-AI3-CAND-08"
+      ],
+      "source_frames": [
+        98,
+        101
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        3.92,
+        4.04
+      ],
+      "target_frames": 98,
+      "target_duration_seconds": 3.92
+    },
+    {
+      "question_id": "G4-Q09",
+      "candidate_slots": [
+        "G4-AI1-CAND-09",
+        "G4-AI3-CAND-09"
+      ],
+      "source_frames": [
+        54,
+        93
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.16,
+        3.72
+      ],
+      "target_frames": 54,
+      "target_duration_seconds": 2.16
+    },
+    {
+      "question_id": "G4-Q10",
+      "candidate_slots": [
+        "G4-AI1-CAND-10",
+        "G4-AI3-CAND-10"
+      ],
+      "source_frames": [
+        49,
+        86
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        1.96,
+        3.44
+      ],
+      "target_frames": 49,
+      "target_duration_seconds": 1.96
+    },
+    {
+      "question_id": "G5-Q01",
+      "candidate_slots": [
+        "G5-AI4-CAND-01",
+        "G5-AI7-CAND-01"
+      ],
+      "source_frames": [
+        84,
+        112
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        3.36,
+        4.48
+      ],
+      "target_frames": 84,
+      "target_duration_seconds": 3.36
+    },
+    {
+      "question_id": "G5-Q02",
+      "candidate_slots": [
+        "G5-AI4-CAND-02",
+        "G5-AI7-CAND-02"
+      ],
+      "source_frames": [
+        60,
+        97
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.4,
+        3.88
+      ],
+      "target_frames": 60,
+      "target_duration_seconds": 2.4
+    },
+    {
+      "question_id": "G5-Q03",
+      "candidate_slots": [
+        "G5-AI4-CAND-03",
+        "G5-AI7-CAND-03"
+      ],
+      "source_frames": [
+        55,
+        77
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.2,
+        3.08
+      ],
+      "target_frames": 55,
+      "target_duration_seconds": 2.2
+    },
+    {
+      "question_id": "G5-Q04",
+      "candidate_slots": [
+        "G5-AI4-CAND-04",
+        "G5-AI7-CAND-04"
+      ],
+      "source_frames": [
+        52,
+        76
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.08,
+        3.04
+      ],
+      "target_frames": 52,
+      "target_duration_seconds": 2.08
+    },
+    {
+      "question_id": "G5-Q05",
+      "candidate_slots": [
+        "G5-AI4-CAND-05",
+        "G5-AI7-CAND-05"
+      ],
+      "source_frames": [
+        74,
+        69
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.96,
+        2.76
+      ],
+      "target_frames": 69,
+      "target_duration_seconds": 2.76
+    },
+    {
+      "question_id": "G5-Q06",
+      "candidate_slots": [
+        "G5-AI4-CAND-06",
+        "G5-AI7-CAND-06"
+      ],
+      "source_frames": [
+        56,
+        67
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.24,
+        2.68
+      ],
+      "target_frames": 56,
+      "target_duration_seconds": 2.24
+    },
+    {
+      "question_id": "G5-Q07",
+      "candidate_slots": [
+        "G5-AI4-CAND-07",
+        "G5-AI7-CAND-07"
+      ],
+      "source_frames": [
+        49,
+        56
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        1.96,
+        2.24
+      ],
+      "target_frames": 49,
+      "target_duration_seconds": 1.96
+    },
+    {
+      "question_id": "G5-Q08",
+      "candidate_slots": [
+        "G5-AI4-CAND-08",
+        "G5-AI7-CAND-08"
+      ],
+      "source_frames": [
+        103,
+        104
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        4.12,
+        4.16
+      ],
+      "target_frames": 103,
+      "target_duration_seconds": 4.12
+    },
+    {
+      "question_id": "G5-Q09",
+      "candidate_slots": [
+        "G5-AI4-CAND-09",
+        "G5-AI7-CAND-09"
+      ],
+      "source_frames": [
+        62,
+        66
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        2.48,
+        2.64
+      ],
+      "target_frames": 62,
+      "target_duration_seconds": 2.48
+    },
+    {
+      "question_id": "G5-Q10",
+      "candidate_slots": [
+        "G5-AI4-CAND-10",
+        "G5-AI7-CAND-10"
+      ],
+      "source_frames": [
+        47,
+        60
+      ],
+      "source_frame_rates": [
+        25,
+        25
+      ],
+      "source_durations_seconds": [
+        1.88,
+        2.4
+      ],
+      "target_frames": 47,
+      "target_duration_seconds": 1.88
+    }
+  ],
+  "videos": [
+    {
+      "slot_id": "G1-SHELDON-REF-01",
+      "source_relative_path": "videos/source/Sheldon/reference_gt/left__S2E16_152.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-ref-01.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 240,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 9.6,
+      "output_frames": 240,
+      "output_duration_seconds": 9.6,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G1-SHELDON-REF-02",
+      "source_relative_path": "videos/source/Sheldon/reference_gt/front__S1E15_451.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-ref-02.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 390,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 15.6,
+      "output_frames": 390,
+      "output_duration_seconds": 15.6,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G1-SHELDON-REF-03",
+      "source_relative_path": "videos/source/Sheldon/reference_gt/right__S5E17_115.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-ref-03.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 213,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 8.52,
+      "output_frames": 213,
+      "output_duration_seconds": 8.52,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G1-SHELDON-CAND-01",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/front_01__S6E18_284.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-cand-01.mp4",
+      "crop": "318:416:90:0",
+      "source_frames": 208,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 8.32,
+      "output_frames": 208,
+      "output_duration_seconds": 8.32,
+      "width": 318,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-SHELDON-CAND-02",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/front_02__S3E3_104.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-cand-02.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 164,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.56,
+      "output_frames": 142,
+      "output_duration_seconds": 5.68,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-SHELDON-CAND-03",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/front_03__S9E13_379.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-cand-03.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 152,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.08,
+      "output_frames": 123,
+      "output_duration_seconds": 4.92,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-SHELDON-CAND-04",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/front_04__S7E8_349.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-cand-04.mp4",
+      "crop": "328:416:80:0",
+      "source_frames": 114,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.56,
+      "output_frames": 114,
+      "output_duration_seconds": 4.56,
+      "width": 328,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-SHELDON-CAND-05",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/left_01__S2E11_207.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-cand-05.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 204,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 8.16,
+      "output_frames": 192,
+      "output_duration_seconds": 7.68,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-SHELDON-CAND-06",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/left_02__S10E24_1.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-cand-06.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 135,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.4,
+      "output_frames": 135,
+      "output_duration_seconds": 5.4,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-SHELDON-CAND-07",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/left_03__S5E13_359.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-cand-07.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 132,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.28,
+      "output_frames": 130,
+      "output_duration_seconds": 5.2,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-SHELDON-CAND-08",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/right_01__S1E13_47.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-cand-08.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 139,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.56,
+      "output_frames": 126,
+      "output_duration_seconds": 5.04,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-SHELDON-CAND-09",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/right_02__S6E2_395.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-cand-09.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 127,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.08,
+      "output_frames": 113,
+      "output_duration_seconds": 4.52,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-SHELDON-CAND-10",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/right_03__S7E5_280.mp4",
+      "output_relative_path": "videos/processed/g1-sheldon-cand-10.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 108,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.32,
+      "output_frames": 108,
+      "output_duration_seconds": 4.32,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-LEONARD-REF-01",
+      "source_relative_path": "videos/source/Leonard/reference_gt/left__S3E18_305.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-ref-01.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 201,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 8.04,
+      "output_frames": 201,
+      "output_duration_seconds": 8.04,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G1-LEONARD-REF-02",
+      "source_relative_path": "videos/source/Leonard/reference_gt/front__S2E22_278.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-ref-02.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 242,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 9.68,
+      "output_frames": 242,
+      "output_duration_seconds": 9.68,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G1-LEONARD-REF-03",
+      "source_relative_path": "videos/source/Leonard/reference_gt/right__S8E20_296.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-ref-03.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 137,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.48,
+      "output_frames": 137,
+      "output_duration_seconds": 5.48,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G1-LEONARD-CAND-01",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/front_01__S7E21_438.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-cand-01.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 213,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 8.52,
+      "output_frames": 208,
+      "output_duration_seconds": 8.32,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-LEONARD-CAND-02",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/front_02__S2E6_2.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-cand-02.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 142,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.68,
+      "output_frames": 142,
+      "output_duration_seconds": 5.68,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-LEONARD-CAND-03",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/front_03__S4E4_118.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-cand-03.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 123,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.92,
+      "output_frames": 123,
+      "output_duration_seconds": 4.92,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-LEONARD-CAND-04",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/front_04__S1E1_133.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-cand-04.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 117,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.68,
+      "output_frames": 114,
+      "output_duration_seconds": 4.56,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-LEONARD-CAND-05",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/left_01__S3E11_35.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-cand-05.mp4",
+      "crop": "324:416:84:0",
+      "source_frames": 192,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 7.68,
+      "output_frames": 192,
+      "output_duration_seconds": 7.68,
+      "width": 324,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-LEONARD-CAND-06",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/left_02__S1E5_365.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-cand-06.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 171,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.84,
+      "output_frames": 135,
+      "output_duration_seconds": 5.4,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-LEONARD-CAND-07",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/left_03__S1E6_603.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-cand-07.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 130,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.2,
+      "output_frames": 130,
+      "output_duration_seconds": 5.2,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-LEONARD-CAND-08",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/right_01__S8E17_49.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-cand-08.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 126,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.04,
+      "output_frames": 126,
+      "output_duration_seconds": 5.04,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-LEONARD-CAND-09",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/right_02__S2E10_227.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-cand-09.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 113,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.52,
+      "output_frames": 113,
+      "output_duration_seconds": 4.52,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G1-LEONARD-CAND-10",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/right_03__S6E3_290.mp4",
+      "output_relative_path": "videos/processed/g1-leonard-cand-10.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 112,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.48,
+      "output_frames": 108,
+      "output_duration_seconds": 4.32,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-HOWARD-REF-01",
+      "source_relative_path": "videos/source/Howard/reference_gt/left__S3E23_187.mp4",
+      "output_relative_path": "videos/processed/g2-howard-ref-01.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 173,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.92,
+      "output_frames": 173,
+      "output_duration_seconds": 6.92,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G2-HOWARD-REF-02",
+      "source_relative_path": "videos/source/Howard/reference_gt/front__S8E18_35.mp4",
+      "output_relative_path": "videos/processed/g2-howard-ref-02.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 198,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 7.92,
+      "output_frames": 198,
+      "output_duration_seconds": 7.92,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G2-HOWARD-REF-03",
+      "source_relative_path": "videos/source/Howard/reference_gt/right__S8E3_185.mp4",
+      "output_relative_path": "videos/processed/g2-howard-ref-03.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 163,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.52,
+      "output_frames": 163,
+      "output_duration_seconds": 6.52,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G2-HOWARD-CAND-01",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/front_01__S6E8_292.mp4",
+      "output_relative_path": "videos/processed/g2-howard-cand-01.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 132,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.28,
+      "output_frames": 132,
+      "output_duration_seconds": 5.28,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-HOWARD-CAND-02",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/front_02__S6E18_324.mp4",
+      "output_relative_path": "videos/processed/g2-howard-cand-02.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 125,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5,
+      "output_frames": 125,
+      "output_duration_seconds": 5,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-HOWARD-CAND-03",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/front_03__S8E17_156.mp4",
+      "output_relative_path": "videos/processed/g2-howard-cand-03.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 90,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 3.6,
+      "output_frames": 90,
+      "output_duration_seconds": 3.6,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-HOWARD-CAND-04",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/front_04__S8E16_323.mp4",
+      "output_relative_path": "videos/processed/g2-howard-cand-04.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 72,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.88,
+      "output_frames": 72,
+      "output_duration_seconds": 2.88,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-HOWARD-CAND-05",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/left_01__S7E12_176.mp4",
+      "output_relative_path": "videos/processed/g2-howard-cand-05.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 137,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.48,
+      "output_frames": 137,
+      "output_duration_seconds": 5.48,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-HOWARD-CAND-06",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/left_02__S7E10_356.mp4",
+      "output_relative_path": "videos/processed/g2-howard-cand-06.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 135,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.4,
+      "output_frames": 135,
+      "output_duration_seconds": 5.4,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-HOWARD-CAND-07",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/left_03__S3E17_184.mp4",
+      "output_relative_path": "videos/processed/g2-howard-cand-07.mp4",
+      "crop": "318:416:90:0",
+      "source_frames": 112,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.48,
+      "output_frames": 112,
+      "output_duration_seconds": 4.48,
+      "width": 318,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-HOWARD-CAND-08",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/right_01__S7E23_54.mp4",
+      "output_relative_path": "videos/processed/g2-howard-cand-08.mp4",
+      "crop": "326:416:82:0",
+      "source_frames": 154,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.16,
+      "output_frames": 126,
+      "output_duration_seconds": 5.04,
+      "width": 326,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-HOWARD-CAND-09",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/right_02__S8E15_135.mp4",
+      "output_relative_path": "videos/processed/g2-howard-cand-09.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 130,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.2,
+      "output_frames": 113,
+      "output_duration_seconds": 4.52,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-HOWARD-CAND-10",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/right_03__S8E2_332.mp4",
+      "output_relative_path": "videos/processed/g2-howard-cand-10.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 128,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.12,
+      "output_frames": 112,
+      "output_duration_seconds": 4.48,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI1-REF-01",
+      "source_relative_path": "videos/source/AI-1/reference_gt/left__target4349_s00105346_e00105412.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-ref-01.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 132,
+      "source_frame_rate": 50,
+      "source_last_frame_end_seconds": 2.64,
+      "output_frames": 66,
+      "output_duration_seconds": 2.64,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G4-AI1-REF-02",
+      "source_relative_path": "videos/source/AI-1/reference_gt/front__target4349_s00214518_e00214667.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-ref-02.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 298,
+      "source_frame_rate": 50,
+      "source_last_frame_end_seconds": 5.96,
+      "output_frames": 149,
+      "output_duration_seconds": 5.96,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G4-AI1-REF-03",
+      "source_relative_path": "videos/source/AI-1/reference_gt/right__target4349_s00009114_e00009221.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-ref-03.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 129,
+      "source_frame_rate": 30,
+      "source_last_frame_end_seconds": 4.3,
+      "output_frames": 108,
+      "output_duration_seconds": 4.32,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G4-AI1-CAND-01",
+      "source_relative_path": "videos/source/AI-1/candidate_faceswap/front_01__target4349_s00116354_e00116472.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-cand-01.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 118,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.72,
+      "output_frames": 118,
+      "output_duration_seconds": 4.72,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI1-CAND-02",
+      "source_relative_path": "videos/source/AI-1/candidate_faceswap/front_02__target4349_s00080283_e00080363.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-cand-02.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 80,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 3.2,
+      "output_frames": 80,
+      "output_duration_seconds": 3.2,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI1-CAND-03",
+      "source_relative_path": "videos/source/AI-1/candidate_faceswap/front_03__target4349_s00106065_e00106135.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-cand-03.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 70,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.8,
+      "output_frames": 70,
+      "output_duration_seconds": 2.8,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI1-CAND-04",
+      "source_relative_path": "videos/source/AI-1/candidate_faceswap/front_04__target4349_s00037584_e00037651.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-cand-04.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 67,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.68,
+      "output_frames": 67,
+      "output_duration_seconds": 2.68,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI1-CAND-05",
+      "source_relative_path": "videos/source/AI-1/candidate_faceswap/left_01__target4349_s00030516_e00030569.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-cand-05.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 53,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.12,
+      "output_frames": 53,
+      "output_duration_seconds": 2.12,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI1-CAND-06",
+      "source_relative_path": "videos/source/AI-1/candidate_faceswap/left_02__target4349_s00073281_e00073333.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-cand-06.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 52,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.08,
+      "output_frames": 52,
+      "output_duration_seconds": 2.08,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI1-CAND-07",
+      "source_relative_path": "videos/source/AI-1/candidate_faceswap/left_03__target4349_s00006577_e00006624.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-cand-07.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 47,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 1.88,
+      "output_frames": 47,
+      "output_duration_seconds": 1.88,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI1-CAND-08",
+      "source_relative_path": "videos/source/AI-1/candidate_faceswap/right_01__target4349_s00026202_e00026300.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-cand-08.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 98,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 3.92,
+      "output_frames": 98,
+      "output_duration_seconds": 3.92,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI1-CAND-09",
+      "source_relative_path": "videos/source/AI-1/candidate_faceswap/right_02__target4349_s00006940_e00006994.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-cand-09.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 54,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.16,
+      "output_frames": 54,
+      "output_duration_seconds": 2.16,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI1-CAND-10",
+      "source_relative_path": "videos/source/AI-1/candidate_faceswap/right_03__target4349_s00097618_e00097667.mp4",
+      "output_relative_path": "videos/processed/g4-ai1-cand-10.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 49,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 1.96,
+      "output_frames": 49,
+      "output_duration_seconds": 1.96,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI3-REF-01",
+      "source_relative_path": "videos/source/AI-3/reference_gt/left__ref01_s00098277_e00098406.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-ref-01.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 155,
+      "source_frame_rate": 30,
+      "source_last_frame_end_seconds": 5.166667,
+      "output_frames": 129,
+      "output_duration_seconds": 5.16,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G4-AI3-REF-02",
+      "source_relative_path": "videos/source/AI-3/reference_gt/front__ref01_s00111135_e00111314.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-ref-02.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 215,
+      "source_frame_rate": 30,
+      "source_last_frame_end_seconds": 7.166667,
+      "output_frames": 179,
+      "output_duration_seconds": 7.16,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G4-AI3-REF-03",
+      "source_relative_path": "videos/source/AI-3/reference_gt/right__ref01_s00179586_e00179723.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-ref-03.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 165,
+      "source_frame_rate": 30,
+      "source_last_frame_end_seconds": 5.5,
+      "output_frames": 138,
+      "output_duration_seconds": 5.52,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G4-AI3-CAND-01",
+      "source_relative_path": "videos/source/AI-3/candidate_faceswap/front_01__ref01_s00128083_e00128261.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-cand-01.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 178,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 7.12,
+      "output_frames": 118,
+      "output_duration_seconds": 4.72,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI3-CAND-02",
+      "source_relative_path": "videos/source/AI-3/candidate_faceswap/front_02__ref01_s00138310_e00138467.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-cand-02.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 157,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.28,
+      "output_frames": 80,
+      "output_duration_seconds": 3.2,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI3-CAND-03",
+      "source_relative_path": "videos/source/AI-3/candidate_faceswap/front_03__ref01_s00067952_e00068101.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-cand-03.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 149,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.96,
+      "output_frames": 70,
+      "output_duration_seconds": 2.8,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI3-CAND-04",
+      "source_relative_path": "videos/source/AI-3/candidate_faceswap/front_04__ref01_s00014746_e00014895.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-cand-04.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 149,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.96,
+      "output_frames": 67,
+      "output_duration_seconds": 2.68,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI3-CAND-05",
+      "source_relative_path": "videos/source/AI-3/candidate_faceswap/left_01__ref01_s00059169_e00059295.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-cand-05.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 126,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.04,
+      "output_frames": 53,
+      "output_duration_seconds": 2.12,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI3-CAND-06",
+      "source_relative_path": "videos/source/AI-3/candidate_faceswap/left_02__ref01_s00099963_e00100085.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-cand-06.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 122,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.88,
+      "output_frames": 52,
+      "output_duration_seconds": 2.08,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI3-CAND-07",
+      "source_relative_path": "videos/source/AI-3/candidate_faceswap/left_03__ref01_s00172302_e00172409.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-cand-07.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 107,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.28,
+      "output_frames": 47,
+      "output_duration_seconds": 1.88,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI3-CAND-08",
+      "source_relative_path": "videos/source/AI-3/candidate_faceswap/right_01__ref01_s00175420_e00175521.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-cand-08.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 101,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.04,
+      "output_frames": 98,
+      "output_duration_seconds": 3.92,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI3-CAND-09",
+      "source_relative_path": "videos/source/AI-3/candidate_faceswap/right_02__ref01_s00068235_e00068328.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-cand-09.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 93,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 3.72,
+      "output_frames": 54,
+      "output_duration_seconds": 2.16,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G4-AI3-CAND-10",
+      "source_relative_path": "videos/source/AI-3/candidate_faceswap/right_03__ref01_s00118979_e00119065.mp4",
+      "output_relative_path": "videos/processed/g4-ai3-cand-10.mp4",
+      "crop": "324:416:92:0",
+      "source_frames": 86,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 3.44,
+      "output_frames": 49,
+      "output_duration_seconds": 1.96,
+      "width": 324,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI4-REF-01",
+      "source_relative_path": "videos/source/AI-4/reference_gt/left__c10_ref01_s00000675_e00000769.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-ref-01.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 113,
+      "source_frame_rate": 30,
+      "source_last_frame_end_seconds": 3.766667,
+      "output_frames": 94,
+      "output_duration_seconds": 3.76,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G5-AI4-REF-02",
+      "source_relative_path": "videos/source/AI-4/reference_gt/front__c10_ref01_s00088187_e00088293.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-ref-02.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 128,
+      "source_frame_rate": 30,
+      "source_last_frame_end_seconds": 4.266667,
+      "output_frames": 107,
+      "output_duration_seconds": 4.28,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G5-AI4-REF-03",
+      "source_relative_path": "videos/source/AI-4/reference_gt/right__c10_ref01_s00081940_e00082063.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-ref-03.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 148,
+      "source_frame_rate": 30,
+      "source_last_frame_end_seconds": 4.933333,
+      "output_frames": 123,
+      "output_duration_seconds": 4.92,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G5-AI4-CAND-01",
+      "source_relative_path": "videos/source/AI-4/candidate_faceswap/front_01__c10_ref01_s00088436_e00088520.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-cand-01.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 84,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 3.36,
+      "output_frames": 84,
+      "output_duration_seconds": 3.36,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI4-CAND-02",
+      "source_relative_path": "videos/source/AI-4/candidate_faceswap/front_02__c10_ref01_s00087950_e00088010.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-cand-02.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 60,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.4,
+      "output_frames": 60,
+      "output_duration_seconds": 2.4,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI4-CAND-03",
+      "source_relative_path": "videos/source/AI-4/candidate_faceswap/front_03__c10_ref01_s00040943_e00040998.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-cand-03.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 55,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.2,
+      "output_frames": 55,
+      "output_duration_seconds": 2.2,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI4-CAND-04",
+      "source_relative_path": "videos/source/AI-4/candidate_faceswap/front_04__c10_ref01_s00088540_e00088592.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-cand-04.mp4",
+      "crop": "318:416:90:0",
+      "source_frames": 52,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.08,
+      "output_frames": 52,
+      "output_duration_seconds": 2.08,
+      "width": 318,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI4-CAND-05",
+      "source_relative_path": "videos/source/AI-4/candidate_faceswap/left_01__c10_ref01_s00033490_e00033564.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-cand-05.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 74,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.96,
+      "output_frames": 69,
+      "output_duration_seconds": 2.76,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI4-CAND-06",
+      "source_relative_path": "videos/source/AI-4/candidate_faceswap/left_02__c10_ref01_s00000999_e00001055.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-cand-06.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 56,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.24,
+      "output_frames": 56,
+      "output_duration_seconds": 2.24,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI4-CAND-07",
+      "source_relative_path": "videos/source/AI-4/candidate_faceswap/left_03__c10_ref01_s00043266_e00043315.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-cand-07.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 49,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 1.96,
+      "output_frames": 49,
+      "output_duration_seconds": 1.96,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI4-CAND-08",
+      "source_relative_path": "videos/source/AI-4/candidate_faceswap/right_01__c10_ref01_s00082108_e00082211.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-cand-08.mp4",
+      "crop": "326:416:92:0",
+      "source_frames": 103,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.12,
+      "output_frames": 103,
+      "output_duration_seconds": 4.12,
+      "width": 326,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI4-CAND-09",
+      "source_relative_path": "videos/source/AI-4/candidate_faceswap/right_02__c10_ref01_s00082568_e00082630.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-cand-09.mp4",
+      "crop": "322:416:92:0",
+      "source_frames": 62,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.48,
+      "output_frames": 62,
+      "output_duration_seconds": 2.48,
+      "width": 322,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI4-CAND-10",
+      "source_relative_path": "videos/source/AI-4/candidate_faceswap/right_03__c10_ref01_s00042825_e00042872.mp4",
+      "output_relative_path": "videos/processed/g5-ai4-cand-10.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 47,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 1.88,
+      "output_frames": 47,
+      "output_duration_seconds": 1.88,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI7-REF-01",
+      "source_relative_path": "videos/source/AI-7/reference_gt/left__c10_jFdt_ref02_s00074496_e00074568.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-ref-01.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 87,
+      "source_frame_rate": 30,
+      "source_last_frame_end_seconds": 2.9,
+      "output_frames": 73,
+      "output_duration_seconds": 2.92,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G5-AI7-REF-02",
+      "source_relative_path": "videos/source/AI-7/reference_gt/front__c10_jFdt_ref02_s00186188_e00186318.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-ref-02.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 156,
+      "source_frame_rate": 30,
+      "source_last_frame_end_seconds": 5.2,
+      "output_frames": 130,
+      "output_duration_seconds": 5.2,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G5-AI7-REF-03",
+      "source_relative_path": "videos/source/AI-7/reference_gt/right__c10_jFdt_ref02_s00021640_e00021763.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-ref-03.mp4",
+      "crop": "512:512:0:0",
+      "source_frames": 148,
+      "source_frame_rate": 30,
+      "source_last_frame_end_seconds": 4.933333,
+      "output_frames": 123,
+      "output_duration_seconds": 4.92,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "slot_id": "G5-AI7-CAND-01",
+      "source_relative_path": "videos/source/AI-7/candidate_faceswap/front_01__c10_jFdt_ref02_s00029958_e00030070.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-cand-01.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 112,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.48,
+      "output_frames": 84,
+      "output_duration_seconds": 3.36,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI7-CAND-02",
+      "source_relative_path": "videos/source/AI-7/candidate_faceswap/front_02__c10_jFdt_ref02_s00044401_e00044498.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-cand-02.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 97,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 3.88,
+      "output_frames": 60,
+      "output_duration_seconds": 2.4,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI7-CAND-03",
+      "source_relative_path": "videos/source/AI-7/candidate_faceswap/front_03__c10_jFdt_ref02_s00098912_e00098989.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-cand-03.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 77,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 3.08,
+      "output_frames": 55,
+      "output_duration_seconds": 2.2,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI7-CAND-04",
+      "source_relative_path": "videos/source/AI-7/candidate_faceswap/front_04__c10_jFdt_ref02_s00151319_e00151395.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-cand-04.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 76,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 3.04,
+      "output_frames": 52,
+      "output_duration_seconds": 2.08,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI7-CAND-05",
+      "source_relative_path": "videos/source/AI-7/candidate_faceswap/left_01__c10_jFdt_ref02_s00170116_e00170185.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-cand-05.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 69,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.76,
+      "output_frames": 69,
+      "output_duration_seconds": 2.76,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI7-CAND-06",
+      "source_relative_path": "videos/source/AI-7/candidate_faceswap/left_02__c10_jFdt_ref02_s00093298_e00093365.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-cand-06.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 67,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.68,
+      "output_frames": 56,
+      "output_duration_seconds": 2.24,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI7-CAND-07",
+      "source_relative_path": "videos/source/AI-7/candidate_faceswap/left_03__c10_jFdt_ref02_s00077875_e00077931.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-cand-07.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 56,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.24,
+      "output_frames": 49,
+      "output_duration_seconds": 1.96,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI7-CAND-08",
+      "source_relative_path": "videos/source/AI-7/candidate_faceswap/right_01__c10_jFdt_ref02_s00135165_e00135269.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-cand-08.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 104,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.16,
+      "output_frames": 103,
+      "output_duration_seconds": 4.12,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI7-CAND-09",
+      "source_relative_path": "videos/source/AI-7/candidate_faceswap/right_02__c10_jFdt_ref02_s00110011_e00110077.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-cand-09.mp4",
+      "crop": "328:416:92:0",
+      "source_frames": 66,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.64,
+      "output_frames": 62,
+      "output_duration_seconds": 2.48,
+      "width": 328,
+      "height": 416
+    },
+    {
+      "slot_id": "G5-AI7-CAND-10",
+      "source_relative_path": "videos/source/AI-7/candidate_faceswap/right_03__c10_jFdt_ref02_s00088481_e00088541.mp4",
+      "output_relative_path": "videos/processed/g5-ai7-cand-10.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 60,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.4,
+      "output_frames": 47,
+      "output_duration_seconds": 1.88,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-LEONARD-REF-01",
+      "source_relative_path": "videos/source/Leonard/reference_gt/left__S3E18_305.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-ref-01.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 201,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 8.04,
+      "output_frames": 201,
+      "output_duration_seconds": 8.04,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G2-LEONARD-REF-02",
+      "source_relative_path": "videos/source/Leonard/reference_gt/front__S2E22_278.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-ref-02.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 242,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 9.68,
+      "output_frames": 242,
+      "output_duration_seconds": 9.68,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G2-LEONARD-REF-03",
+      "source_relative_path": "videos/source/Leonard/reference_gt/right__S8E20_296.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-ref-03.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 137,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.48,
+      "output_frames": 137,
+      "output_duration_seconds": 5.48,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G2-LEONARD-CAND-01",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/front_01__S7E21_438.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-cand-01.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 213,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 8.52,
+      "output_frames": 132,
+      "output_duration_seconds": 5.28,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-LEONARD-CAND-02",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/front_02__S2E6_2.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-cand-02.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 142,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.68,
+      "output_frames": 125,
+      "output_duration_seconds": 5,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-LEONARD-CAND-03",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/front_03__S4E4_118.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-cand-03.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 123,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.92,
+      "output_frames": 90,
+      "output_duration_seconds": 3.6,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-LEONARD-CAND-04",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/front_04__S1E1_133.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-cand-04.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 117,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.68,
+      "output_frames": 72,
+      "output_duration_seconds": 2.88,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-LEONARD-CAND-05",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/left_01__S3E11_35.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-cand-05.mp4",
+      "crop": "324:416:84:0",
+      "source_frames": 192,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 7.68,
+      "output_frames": 137,
+      "output_duration_seconds": 5.48,
+      "width": 324,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-LEONARD-CAND-06",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/left_02__S1E5_365.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-cand-06.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 171,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.84,
+      "output_frames": 135,
+      "output_duration_seconds": 5.4,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-LEONARD-CAND-07",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/left_03__S1E6_603.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-cand-07.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 130,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.2,
+      "output_frames": 112,
+      "output_duration_seconds": 4.48,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-LEONARD-CAND-08",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/right_01__S8E17_49.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-cand-08.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 126,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.04,
+      "output_frames": 126,
+      "output_duration_seconds": 5.04,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-LEONARD-CAND-09",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/right_02__S2E10_227.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-cand-09.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 113,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.52,
+      "output_frames": 113,
+      "output_duration_seconds": 4.52,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G2-LEONARD-CAND-10",
+      "source_relative_path": "videos/source/Leonard/candidate_faceswap/right_03__S6E3_290.mp4",
+      "output_relative_path": "videos/processed/g2-leonard-cand-10.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 112,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.48,
+      "output_frames": 112,
+      "output_duration_seconds": 4.48,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-HOWARD-REF-01",
+      "source_relative_path": "videos/source/Howard/reference_gt/left__S3E23_187.mp4",
+      "output_relative_path": "videos/processed/g3-howard-ref-01.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 173,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.92,
+      "output_frames": 173,
+      "output_duration_seconds": 6.92,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G3-HOWARD-REF-02",
+      "source_relative_path": "videos/source/Howard/reference_gt/front__S8E18_35.mp4",
+      "output_relative_path": "videos/processed/g3-howard-ref-02.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 198,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 7.92,
+      "output_frames": 198,
+      "output_duration_seconds": 7.92,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G3-HOWARD-REF-03",
+      "source_relative_path": "videos/source/Howard/reference_gt/right__S8E3_185.mp4",
+      "output_relative_path": "videos/processed/g3-howard-ref-03.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 163,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.52,
+      "output_frames": 163,
+      "output_duration_seconds": 6.52,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G3-HOWARD-CAND-01",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/front_01__S6E8_292.mp4",
+      "output_relative_path": "videos/processed/g3-howard-cand-01.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 132,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.28,
+      "output_frames": 132,
+      "output_duration_seconds": 5.28,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-HOWARD-CAND-02",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/front_02__S6E18_324.mp4",
+      "output_relative_path": "videos/processed/g3-howard-cand-02.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 125,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5,
+      "output_frames": 125,
+      "output_duration_seconds": 5,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-HOWARD-CAND-03",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/front_03__S8E17_156.mp4",
+      "output_relative_path": "videos/processed/g3-howard-cand-03.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 90,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 3.6,
+      "output_frames": 90,
+      "output_duration_seconds": 3.6,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-HOWARD-CAND-04",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/front_04__S8E16_323.mp4",
+      "output_relative_path": "videos/processed/g3-howard-cand-04.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 72,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 2.88,
+      "output_frames": 72,
+      "output_duration_seconds": 2.88,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-HOWARD-CAND-05",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/left_01__S7E12_176.mp4",
+      "output_relative_path": "videos/processed/g3-howard-cand-05.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 137,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.48,
+      "output_frames": 137,
+      "output_duration_seconds": 5.48,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-HOWARD-CAND-06",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/left_02__S7E10_356.mp4",
+      "output_relative_path": "videos/processed/g3-howard-cand-06.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 135,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.4,
+      "output_frames": 135,
+      "output_duration_seconds": 5.4,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-HOWARD-CAND-07",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/left_03__S3E17_184.mp4",
+      "output_relative_path": "videos/processed/g3-howard-cand-07.mp4",
+      "crop": "318:416:90:0",
+      "source_frames": 112,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.48,
+      "output_frames": 112,
+      "output_duration_seconds": 4.48,
+      "width": 318,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-HOWARD-CAND-08",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/right_01__S7E23_54.mp4",
+      "output_relative_path": "videos/processed/g3-howard-cand-08.mp4",
+      "crop": "326:416:82:0",
+      "source_frames": 154,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.16,
+      "output_frames": 139,
+      "output_duration_seconds": 5.56,
+      "width": 326,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-HOWARD-CAND-09",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/right_02__S8E15_135.mp4",
+      "output_relative_path": "videos/processed/g3-howard-cand-09.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 130,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.2,
+      "output_frames": 127,
+      "output_duration_seconds": 5.08,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-HOWARD-CAND-10",
+      "source_relative_path": "videos/source/Howard/candidate_faceswap/right_03__S8E2_332.mp4",
+      "output_relative_path": "videos/processed/g3-howard-cand-10.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 128,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.12,
+      "output_frames": 108,
+      "output_duration_seconds": 4.32,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-SHELDON-REF-01",
+      "source_relative_path": "videos/source/Sheldon/reference_gt/left__S2E16_152.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-ref-01.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 240,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 9.6,
+      "output_frames": 240,
+      "output_duration_seconds": 9.6,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G3-SHELDON-REF-02",
+      "source_relative_path": "videos/source/Sheldon/reference_gt/front__S1E15_451.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-ref-02.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 390,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 15.6,
+      "output_frames": 390,
+      "output_duration_seconds": 15.6,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G3-SHELDON-REF-03",
+      "source_relative_path": "videos/source/Sheldon/reference_gt/right__S5E17_115.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-ref-03.mp4",
+      "crop": "224:224:0:0",
+      "source_frames": 213,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 8.52,
+      "output_frames": 213,
+      "output_duration_seconds": 8.52,
+      "width": 224,
+      "height": 224
+    },
+    {
+      "slot_id": "G3-SHELDON-CAND-01",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/front_01__S6E18_284.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-cand-01.mp4",
+      "crop": "318:416:90:0",
+      "source_frames": 208,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 8.32,
+      "output_frames": 132,
+      "output_duration_seconds": 5.28,
+      "width": 318,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-SHELDON-CAND-02",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/front_02__S3E3_104.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-cand-02.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 164,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.56,
+      "output_frames": 125,
+      "output_duration_seconds": 5,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-SHELDON-CAND-03",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/front_03__S9E13_379.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-cand-03.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 152,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 6.08,
+      "output_frames": 90,
+      "output_duration_seconds": 3.6,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-SHELDON-CAND-04",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/front_04__S7E8_349.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-cand-04.mp4",
+      "crop": "328:416:80:0",
+      "source_frames": 114,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.56,
+      "output_frames": 72,
+      "output_duration_seconds": 2.88,
+      "width": 328,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-SHELDON-CAND-05",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/left_01__S2E11_207.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-cand-05.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 204,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 8.16,
+      "output_frames": 137,
+      "output_duration_seconds": 5.48,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-SHELDON-CAND-06",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/left_02__S10E24_1.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-cand-06.mp4",
+      "crop": "314:416:92:0",
+      "source_frames": 135,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.4,
+      "output_frames": 135,
+      "output_duration_seconds": 5.4,
+      "width": 314,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-SHELDON-CAND-07",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/left_03__S5E13_359.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-cand-07.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 132,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.28,
+      "output_frames": 112,
+      "output_duration_seconds": 4.48,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-SHELDON-CAND-08",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/right_01__S1E13_47.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-cand-08.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 139,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.56,
+      "output_frames": 139,
+      "output_duration_seconds": 5.56,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-SHELDON-CAND-09",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/right_02__S6E2_395.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-cand-09.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 127,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 5.08,
+      "output_frames": 127,
+      "output_duration_seconds": 5.08,
+      "width": 316,
+      "height": 416
+    },
+    {
+      "slot_id": "G3-SHELDON-CAND-10",
+      "source_relative_path": "videos/source/Sheldon/candidate_faceswap/right_03__S7E5_280.mp4",
+      "output_relative_path": "videos/processed/g3-sheldon-cand-10.mp4",
+      "crop": "316:416:92:0",
+      "source_frames": 108,
+      "source_frame_rate": 25,
+      "source_last_frame_end_seconds": 4.32,
+      "output_frames": 108,
+      "output_duration_seconds": 4.32,
+      "width": 316,
+      "height": 416
+    }
+  ]
+}

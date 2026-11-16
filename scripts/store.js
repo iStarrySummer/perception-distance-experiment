@@ -1,7 +1,7 @@
 (function () {
   "use strict"
 
-  var storageKey = "perception-distance-experiment:state:v1"
+  var storageKey = "perception-distance-experiment:state:v2"
   var alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
 
   function participantId() {
